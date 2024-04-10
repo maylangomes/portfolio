@@ -30,4 +30,4 @@ jobs:
         node-version: 16
     - run: npm install
     - run: npm run build
-    - run: npm run dev # Add this line to start the development server
+    - run: npm run dev
