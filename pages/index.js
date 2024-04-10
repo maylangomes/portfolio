@@ -5,7 +5,6 @@ import {
   AiFillGithub,
   AiFillLinkedin
 } from "react-icons/ai";
-import favicon from "/favicon.ico";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import Image from "next/image";
@@ -20,7 +19,6 @@ export default function Home() {
     <div className={darkMode ? "dark font-quicksand" : "font-quicksand"}>
       <Head>
         <title>Portfolio</title>
-        <link rel="icon" href={favicon} />
       </Head>
       <nav className="bg-teal-600">
         <div className="max-w-7xl mx-auto sm:px-24 lg:px-8">
