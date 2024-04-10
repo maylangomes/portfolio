@@ -13,10 +13,18 @@ on:
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  actions: read|write|none
+  checks: read|write|none
+  contents: read|write|none
+  deployments: read|write|none
+  issues: read|write|none
+  packages: read|write|none
+  pull-requests: read|write|none
+  repository-projects: read|write|none
+  security-events: read|write|none
+  statuses: read|write|none
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
