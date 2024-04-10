@@ -5,7 +5,7 @@ import {
   AiFillGithub,
   AiFillLinkedin
 } from "react-icons/ai";
-import favicon from "../public/favicon.ico";
+import favicon from "/favicon.ico";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import Image from "next/image";
