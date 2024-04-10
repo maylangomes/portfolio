@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* @font-face {
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
+} */
+
+@font-face {
+  font-family: "glametrix";
+  src: url("../public/Glametrix-oj9A.otf");
+  src: url("../public/GlametrixLight-0zjo.otf");
+  src: url("../public/GlametrixBold-4dW6.otf");
+}
+
+@font-face {
+  font-family: "quicksand";
+  src: url("../public/Quicksand-Regular.otf");
+}
