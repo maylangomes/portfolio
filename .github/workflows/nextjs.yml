@@ -1,57 +1,24 @@
-name: Deployement Workflow
-
+name: nextjs-setup
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
-  build:
-    name: build
+  runs:
     runs-on: ubuntu-latest
-
-    permissions:
-      pages: write
-      id-token: write
-      
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Install dependencies
-        run: npm install
-      
-      - name: Build Next.js app
-        run: npm run build
-
-      - name: Upload artifacts
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
-
-      - name: Deploy on Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-
-
-#   deploy:
-# #    name: deploy
-# #    needs: build
-# #  
-#     # runs-on: ubuntu-latest
-  
-#     # permissions:
-#     #   pages: write
-#     #   id-token: write
-      
-#     # environment:
-#     #   name: github-pages
-#     #   url: ${{ steps.deployment.outputs.page_url }}
-
-#      steps:
-#       - name: Deploy on Pages
-#         uses: actions/deploy-pages@v4
+    - name: Setup Node.js ⚙️
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+    - name: Cache dependencies ⚡
+      id: cache_dependencies
+      uses: actions/cache@v3
+      with:
+        path: node_modules
+        key: node-modules-${{ hashFiles('package-lock.json') }}
+    - name: Install dependencies 🔧
+      shell: bash
+      if: steps.cache_dependencies.outputs.cache-hit != 'true'
+      run: npm ci
