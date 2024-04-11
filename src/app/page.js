@@ -1,14 +1,32 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/alt-text */
-import Head from "next/head";
-import {
-  AiFillGithub,
-  AiFillLinkedin
-} from "react-icons/ai";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+'use client'
+import "./globals.css"
 import { useState } from "react";
-import Image from "next/image";
-import puissance4 from "../public/puissance4.png";
+import Image from 'next/legacy/image';
+//import Puissance4 from '../public/puissance4.png';
+
+// export default function test() {
+//   return (
+//     <Image
+//     src={"/puissance4.png"}
+//     alt="picture"
+//     width={100}
+//     height={100}
+//     priority
+//     //sizes="100vw"
+//     />
+//   )
+// }
+
+
+// import {
+//   AiFillGithub,
+//   AiFillLinkedin
+// } from "react-icons/ai";
+//import { BsFillMoonStarsFill } from "react-icons/bs";
+// import Image from "next/image";
+// import puissance4 from "../public/puissance4.png";
 
 
 export default function Home() {
@@ -17,9 +35,7 @@ export default function Home() {
 
   return (
     <div className={darkMode ? "dark font-quicksand" : "font-quicksand"}>
-      <Head>
-        <title>Portfolio</title>
-      </Head>
+      <title>Portfolio</title>
       <nav className="bg-teal-600">
         <div className="max-w-7xl mx-auto sm:px-24 lg:px-8">
           <div className="flex items-center justify-between h-6 sm:h-24">
@@ -68,22 +84,22 @@ export default function Home() {
           <div className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="font-glametrix text-3xl">Welcome to my portfolio</h1>
             <ul className="flex items-center">
-              <li className="mt-16">
+              {/* <li className="mt-16">
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className=" cursor-pointer text-2xl"
                 />
-              </li>
+              </li> */}
               <li className="lg:fixed hidden lg:block">
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-2 py-2 border-none rounded-md ml-8"
                   href="#">
                   Back to menu
                 </a>
               </li>
               <li className="fixed lg:hidden sm:block">
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-2"
                   href="#">
                   &#x2191;
                 </a>
@@ -100,10 +116,10 @@ export default function Home() {
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages.
             </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+            {/* <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <AiFillLinkedin />
               <AiFillGithub />
-            </div>
+            </div> */}
             {/* <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
             </div> */}
@@ -118,10 +134,13 @@ export default function Home() {
             </p>
               <Image
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                alt="puissance4"
+                width={"100"}
+                height={"100"}
                 layout="responsive"
-                src={puissance4}
+                src={"/puissance4.png"}
+                priority
+                onClick={() => setDarkMode(!darkMode)}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -129,65 +148,65 @@ export default function Home() {
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
-              <Image
+              {/* <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={puissance4}
-              />
+              /> */}
             </div>
             <div className="basis-1/3 flex-1">
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
-              <Image
+              {/* <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={puissance4}
-              />
+              /> */}
             </div>
             <div id="Puissance4" className="basis-1/3 flex-1">
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
-              <Image
+              {/* <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={puissance4}
-              />
+              /> */}
             </div>
             <div className="basis-1/3 flex-1">
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
-              <Image
+              {/* <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}Generated
                 layout="responsive"
                 src={puissance4}
-              />
+              /> */}
             </div>
             <div className="basis-1/3 flex-1">
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
-              <Image
+              {/* <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={puissance4}
-              />
+              /> */}
             </div>
           </div>
         </section>
