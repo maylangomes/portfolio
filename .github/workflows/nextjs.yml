@@ -33,8 +33,8 @@ jobs:
       #       npm run build
       #       # pm2 restart your-pm2-service-name
       
-      - name: Upload static files
-        uses: actions/upload-pages-artifact
+      # - name: Upload static files
+      #   uses: actions/upload-pages-artifact
 
       - name: Deploy on Pages
-        uses: actions/deploy-pages
+        uses: actions/deploy-pages@v4
