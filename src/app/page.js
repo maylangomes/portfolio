@@ -37,7 +37,7 @@ export default function Home() {
     <div className={darkMode ? "dark font-quicksand" : "font-quicksand"}>
       <title>Portfolio</title>
       <nav className="bg-teal-600">
-        <div className="max-w-7xl mx-auto sm:px-24 lg:px-8">
+        <div className="max-w-7xl mx-auto sm:px-24 lg:px-24">
           <div className="flex items-center justify-between h-6 sm:h-24">
             {/* <div className="flex sm:hidden">
               <button type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-teal-400 hover:bg-teal-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
@@ -50,9 +50,9 @@ export default function Home() {
               </button>
             </div> */}
             <div className="hidden sm:block lg:flex items-center mx-auto">
-              <a href="#" className="text-white hover:bg-teal-400 rounded-md py-2 font-bold mr-20" aria-current="page">Projets</a>
+              <a href="#" className="text-white hover:bg-teal-400 rounded-md px-3 py-2 font-bold mr-20" aria-current="page">Projets</a>
               <div className="mx-auto">
-                <a href="#Puissance4" className="text-white hover:bg-teal-500 rounded-md pr-3 lg:px-4 py-2">Puissance_4</a>
+                <a href="#Puissance4" className="text-white hover:bg-teal-500 rounded-md px-3 py-2">Puissance_4</a>
                 <a href="#" className="text-white hover:bg-teal-500 rounded-md px-3 lg:px-4 py-2">Meetic</a>
                 <a href="#" className="text-white hover:bg-teal-500 rounded-md px-3 lg:px-4 py-2">Twitter</a>
                 <a href="#" className="text-white hover:bg-teal-500 rounded-md px-3 lg:px-4 py-2">Free_ads</a>
@@ -99,7 +99,7 @@ export default function Home() {
               </li>
               <li className="fixed lg:hidden sm:block">
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-2"
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-6"
                   href="#">
                   &#x2191;
                 </a>
