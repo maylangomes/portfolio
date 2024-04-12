@@ -99,21 +99,21 @@ export default function Home() {
               </li>
               <li className="fixed lg:hidden sm:block">
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-xl ml-6"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-xl ml-8"
                   href="#">
                   &#x2191;
                 </a>
               </li>
             </ul>
           </div>
-          <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+          <div className="text-center py-10">
+            <h2 className="text-5xl py-2 text-teal-600 dark:text-teal-400 md:text-6xl">
               Maylan Gomes
             </h2>
             <h3 className="text-2xl py-2 dark:text-white sm:text-3xl">
               Développeur full-stack.
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+            <p className="text-lg py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-2xl mx-auto md:text-xl">
               Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
@@ -128,7 +128,7 @@ export default function Home() {
         <section className="py-10">
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
@@ -143,7 +143,7 @@ export default function Home() {
               />
             </div>
             <div className="basis-1/3 flex-1">
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
@@ -156,7 +156,7 @@ export default function Home() {
               /> */}
             </div>
             <div className="basis-1/3 flex-1">
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
@@ -169,7 +169,7 @@ export default function Home() {
               /> */}
             </div>
             <div id="Puissance4" className="basis-1/3 flex-1">
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
@@ -182,7 +182,7 @@ export default function Home() {
               /> */}
             </div>
             <div className="basis-1/3 flex-1">
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
@@ -195,7 +195,7 @@ export default function Home() {
               /> */}
             </div>
             <div className="basis-1/3 flex-1">
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
