@@ -50,7 +50,7 @@ export default function Home() {
               </button>
             </div> */}
             <div className="hidden sm:block lg:flex items-center mx-auto">
-              <a href="#" className="text-white hover:bg-teal-400 rounded-md py-2 font-bold mr-20" aria-current="page">rojets</a>
+              <a href="#" className="text-white hover:bg-teal-400 rounded-md py-2 font-bold mr-20" aria-current="page">Projets</a>
               <div className="mx-auto">
                 <a href="#Puissance4" className="text-white hover:bg-teal-500 rounded-md pr-3 lg:px-4 py-2">Puissance_4</a>
                 <a href="#" className="text-white hover:bg-teal-500 rounded-md px-3 lg:px-4 py-2">Meetic</a>
