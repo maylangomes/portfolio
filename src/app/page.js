@@ -50,7 +50,7 @@ export default function Home() {
               </button>
             </div> */}
             <div className="hidden sm:block lg:flex items-center mx-auto">
-              <a href="#" className="text-white hover:bg-teal-400 rounded-lg px-3 py-2 font-bold mr-20" aria-current="page">rojets</a>
+              <a href="#" className="text-white hover:bg-teal-400 rounded-lg px-3 py-2 font-bold mr-20" aria-current="page">Projets</a>
               <div className="mx-auto">
                 <a href="#Puissance4" className="text-white hover:bg-teal-500 rounded-lg px-3 py-2">Puissance_4</a>
                 <a href="#" className="text-white hover:bg-teal-500 rounded-lg px-3 lg:px-4 py-2">Meetic</a>
@@ -138,8 +138,8 @@ export default function Home() {
                 width={"100"}
                 height={"100"}
                 layout="responsive"
+                priority
                 src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance4.png"}
-                //src={"/puissance4.png"}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -147,65 +147,75 @@ export default function Home() {
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
-              {/* <Image
+            <Image
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                alt="puissance4"
+                width={"100"}
+                height={"100"}
                 layout="responsive"
-                src={puissance4}
-              /> */}
+                priority
+                src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance4.png"}
+              />
             </div>
             <div className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
-              {/* <Image
+            <Image
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                alt="puissance4"
+                width={"100"}
+                height={"100"}
                 layout="responsive"
-                src={puissance4}
-              /> */}
+                priority
+                src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance4.png"}
+              />
             </div>
             <div id="Puissance4" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
-              {/* <Image
+            <Image
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                alt="puissance4"
+                width={"100"}
+                height={"100"}
                 layout="responsive"
-                src={puissance4}
-              /> */}
+                priority
+                src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance4.png"}
+              />
             </div>
             <div className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
-              {/* <Image
+            <Image
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}Generated
+                alt="puissance4"
+                width={"100"}
+                height={"100"}
                 layout="responsive"
-                src={puissance4}
-              /> */}
+                priority
+                src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance4.png"}
+              />
             </div>
             <div className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
-              {/* <Image
+            <Image
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                alt="puissance4"
+                width={"100"}
+                height={"100"}
                 layout="responsive"
-                src={puissance4}
-              /> */}
+                priority
+                src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance4.png"}
+              />
             </div>
           </div>
         </section>
