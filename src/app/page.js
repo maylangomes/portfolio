@@ -138,7 +138,7 @@ export default function Home() {
                 width={"100"}
                 height={"100"}
                 layout="responsive"
-                src={"https://raw.githubusercontent.com/maylangomes/Portfolio/main/puissance4.png"}
+                src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance4.png"}
                 //src={"/puissance4.png"}
               />
             </div>
