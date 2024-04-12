@@ -693,11 +693,11 @@ video {
 .text-center {
   text-align: center;
 }
-.font-glametrix {
-  font-family: glametrix;
-}
 .font-quicksand {
   font-family: quicksand;
+}
+.font-glametrix {
+  font-family: glametrix;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -720,6 +720,9 @@ video {
 }
 .font-medium {
   font-weight: 500;
+}
+.italic {
+  font-style: italic;
 }
 .leading-8 {
   line-height: 2rem;
@@ -772,6 +775,11 @@ body {
 @font-face {
   font-family: "quicksand";
   src: url("/Quicksand-Regular.otf");
+}
+
+@font-face {
+  font-family: "glametrix";
+  src: url("/Glametrix-oj91.otf");
 }
 
 /* .quicksand {

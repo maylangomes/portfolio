@@ -37,6 +37,11 @@ body {
   src: url("/Quicksand-Regular.otf");
 }
 
+@font-face {
+  font-family: "glametrix";
+  src: url("/Glametrix-oj91.otf");
+}
+
 /* .quicksand {
   font-family: "quicksand";
 } */

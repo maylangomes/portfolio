@@ -20,12 +20,12 @@ import Image from 'next/legacy/image';
 // }
 
 
-// import {
-//   AiFillGithub,
-//   AiFillLinkedin
-// } from "react-icons/ai";
-//import { BsFillMoonStarsFill } from "react-icons/bs";
-// import Image from "next/image";
+import {
+  AiFillGithub,
+  AiFillLinkedin
+} from "react-icons/ai";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+//import Image from "next/image";
 // import puissance4 from "../public/puissance4.png";
 
 
@@ -82,14 +82,14 @@ export default function Home() {
         {/* <section className="min-h-screen"> */}
         <section>
           <div className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-glametrix text-3xl">Welcome to my portfolio</h1>
+            <h1 className=" font-glametrix italic text-3xl">Welcome to my portfolio</h1>
             <ul className="flex items-center">
-              {/* <li className="mt-16">
+              <li className="mt-16">
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className=" cursor-pointer text-2xl"
                 />
-              </li> */}
+              </li>
               <li className="lg:fixed hidden lg:block">
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-2 py-2 border-none rounded-md ml-8"
@@ -116,10 +116,10 @@ export default function Home() {
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages.
             </p>
-            {/* <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <AiFillLinkedin />
               <AiFillGithub />
-            </div> */}
+            </div>
             {/* <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
             </div> */}
@@ -140,8 +140,6 @@ export default function Home() {
                 layout="responsive"
                 src={"https://raw.githubusercontent.com/maylangomes/Portfolio/main/puissance4.png"}
                 //src={"/puissance4.png"}
-                priority
-                onClick={() => setDarkMode(!darkMode)}
               />
             </div>
             <div className="basis-1/3 flex-1">
