@@ -37,7 +37,7 @@ export default function Home() {
     <div className={darkMode ? "dark font-quicksand" : "font-quicksand"}>
       <title>Portfolio</title>
       <nav className="bg-teal-600">
-        <div className="max-w-7xl mx-auto sm:px-24 lg:px-24">
+        <div className="">
           <div className="flex items-center justify-between h-6 sm:h-24">
             {/* <div className="flex sm:hidden">
               <button type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-teal-400 hover:bg-teal-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
@@ -50,28 +50,28 @@ export default function Home() {
               </button>
             </div> */}
             <div className="hidden sm:block lg:flex items-center mx-auto">
-              <a href="#" className="text-white hover:bg-teal-400 rounded-md px-3 py-2 font-bold mr-20" aria-current="page">Projets</a>
+              <a href="#" className="text-white hover:bg-teal-400 rounded-lg px-3 py-2 font-bold mr-20" aria-current="page">rojets</a>
               <div className="mx-auto">
-                <a href="#Puissance4" className="text-white hover:bg-teal-500 rounded-md px-3 py-2">Puissance_4</a>
-                <a href="#" className="text-white hover:bg-teal-500 rounded-md px-3 lg:px-4 py-2">Meetic</a>
-                <a href="#" className="text-white hover:bg-teal-500 rounded-md px-3 lg:px-4 py-2">Twitter</a>
-                <a href="#" className="text-white hover:bg-teal-500 rounded-md px-3 lg:px-4 py-2">Free_ads</a>
-                <a href="#" className="text-white hover:bg-teal-500 rounded-md px-3 lg:px-4 py-2">Spotify</a>
-                <a href="#" className="text-white hover:bg-teal-500 rounded-md px-3 lg:px-4 py-2">Morpion</a>
+                <a href="#Puissance4" className="text-white hover:bg-teal-500 rounded-lg px-3 py-2">Puissance_4</a>
+                <a href="#" className="text-white hover:bg-teal-500 rounded-lg px-3 lg:px-4 py-2">Meetic</a>
+                <a href="#" className="text-white hover:bg-teal-500 rounded-lg px-3 lg:px-4 py-2">Twitter</a>
+                <a href="#" className="text-white hover:bg-teal-500 rounded-lg px-3 lg:px-4 py-2">Free_ads</a>
+                <a href="#" className="text-white hover:bg-teal-500 rounded-lg px-3 lg:px-4 py-2">Spotify</a>
+                <a href="#" className="text-white hover:bg-teal-500 rounded-lg px-3 lg:px-4 py-2">Morpion</a>
               </div>
             </div>
           </div>
         </div>
 
         <div className="sm:hidden" id="mobile-menu">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            <a href="#" className="text-white hover:bg-teal-700 hover:text-white block px-3 py-2 rounded-md text-base font-bold">Projets</a>
-            <a href="#Puissance4" className="text-white hover:bg-teal-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Puissance 4</a>
-            <a href="#" className="text-white hover:bg-teal-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Meetic</a>
-            <a href="#" className="text-white hover:bg-teal-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Twitter</a>
-            <a href="#" className="text-white hover:bg-teal-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Free ads</a>
-            <a href="#" className="text-white hover:bg-teal-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Spotify</a>
-            <a href="#" className="text-white hover:bg-teal-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Morpion</a>
+          <div className="px-2 pb-3 space-y-1">
+            <a href="#" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg font-bold">Projets</a>
+            <a href="#Puissance4" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Puissance 4</a>
+            <a href="#" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Meetic</a>
+            <a href="#" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Twitter</a>
+            <a href="#" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Free ads</a>
+            <a href="#" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Spotify</a>
+            <a href="#" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Morpion</a>
           </div>
         </div>
       </nav>
@@ -83,23 +83,23 @@ export default function Home() {
         <section>
           <div className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className=" font-glametrix italic text-3xl">Welcome to my portfolio</h1>
-            <ul className="flex items-center">
-              <li className="mt-16">
+            <ul className="flex">
+              <li className="mt-10">
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
+                  className=" cursor-pointer text-3xl"
                 />
               </li>
               <li className="lg:fixed hidden lg:block">
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-2 py-2 border-none rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-2 py-2 rounded-xl ml-8"
                   href="#">
                   Back to menu
                 </a>
               </li>
               <li className="fixed lg:hidden sm:block">
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-6"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-xl ml-6"
                   href="#">
                   &#x2191;
                 </a>
@@ -110,7 +110,7 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Maylan Gomes
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+            <h3 className="text-2xl py-2 dark:text-white sm:text-3xl">
               Développeur full-stack.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
