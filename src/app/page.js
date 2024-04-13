@@ -28,11 +28,32 @@ import {
 import { BsFillMoonStarsFill } from "react-icons/bs";
 //import Image from "next/image";
 // import puissance4 from "../public/puissance4.png";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
+
+    const form = useRef();
+  
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm('service_t082uo9', 'template_qfojwui', form.current, {
+          publicKey: 'Fow1RoFj-MyGR-0J0',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    };
 
   return (
     <div className={darkMode ? "dark font-quicksand" : "font-quicksand"}>
@@ -221,6 +242,15 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form>
       </main>
     </div>
   );
