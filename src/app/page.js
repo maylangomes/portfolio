@@ -30,6 +30,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 // import puissance4 from "../public/puissance4.png";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { saveAs } from "file-saver";
 
 
 export default function Home() {
@@ -86,7 +87,7 @@ export default function Home() {
                 <a href="#" className="text-white hover:bg-teal-500 rounded-lg px-3 lg:px-4 py-2">Morpion</a>
               </div>
             </div>
-            <a href="#" download={"CV_wac.pdf"} className="text-white text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold mr-14">CV</a>
+            <a href="CV_wac.pdf" download className="text-white text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold mr-14">CV</a>
           </div>
         </div>
         <div className="sm:hidden" id="mobile-menu">
