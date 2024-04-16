@@ -35,6 +35,7 @@ import emailjs from '@emailjs/browser';
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
+  const [showForm, setShowForm] = useState(true);
 
     const form = useRef();
   
@@ -47,10 +48,12 @@ export default function Home() {
         })
         .then(
           () => {
-            console.log('SUCCESS!');
+            console.log('SUCCESS !');
+            alert("Message sent successfully, thanks !");
           },
           (error) => {
             console.log('FAILED...', error.text);
+            alert("Error : You're message hasn't been send !");
           },
         );
     };
@@ -71,6 +74,7 @@ export default function Home() {
                 </svg>
               </button>
             </div> */}
+            <a onClick={() => setShowForm(!showForm)} href="#welcome" className="text-white text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold float-left ml-14">Contact</a>
             <div className="hidden sm:block lg:flex items-center mx-auto">
               <a href="#" className="text-white hover:bg-teal-400 rounded-lg px-3 py-2 font-bold mr-20">Projets</a>
               <div className="mx-auto">
@@ -80,12 +84,11 @@ export default function Home() {
                 <a href="#" className="text-white hover:bg-teal-500 rounded-lg px-3 lg:px-4 py-2">Battleship</a>
                 <a href="#" className="text-white hover:bg-teal-500 rounded-lg px-3 lg:px-4 py-2 whitespace-nowrap">Sprite Generator</a>
                 <a href="#" className="text-white hover:bg-teal-500 rounded-lg px-3 lg:px-4 py-2">Morpion</a>
-
               </div>
             </div>
+            <a href="#" download={"CV_wac.pdf"} className="text-white text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold mr-14">CV</a>
           </div>
         </div>
-
         <div className="sm:hidden" id="mobile-menu">
           <div className="px-2 pb-3 space-y-1">
             <a href="#" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg font-bold">Projets</a>
@@ -98,14 +101,31 @@ export default function Home() {
           </div>
         </div>
       </nav>
-
-
-
+      <div className={showForm ? "hidden" : ""}>
+        <div className="absolute">
+          <form ref={form} onSubmit={sendEmail} className="bg-teal-600 px-16 absolute mt-44">
+            <h1 className="text-white py-10 font-extrabold text-2xl underline">Contacte-moi ici</h1>
+            <div className="py-2">
+            <label className="text-white">Name</label>
+            <input type="text" name="user_name" />
+            </div>
+            <div className="py-2">
+            <label className="text-white">Email</label>
+            <input type="email" name="user_email" required />
+            </div>
+            <div className="py-2">
+            <label className="text-white">Message</label>
+            <textarea name="message" />
+            </div>
+            <input className="text-white font-bold my-6 mb-8 px-20 bg-slate-400" type="submit" value="Send" />
+          </form>
+        </div>
+      </div>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         {/* <section className="min-h-screen"> */}
         <section>
           <div className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className=" font-glametrix italic text-3xl mt-20">Welcome to my portfolio</h1>
+            <h1 id="welcome" className=" font-glametrix italic text-3xl mt-20">Bienvenue sur mon portfolio !</h1>
             <ul className="flex">
               <li className="mt-20">
                 <BsFillMoonStarsFill
@@ -242,15 +262,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
       </main>
     </div>
   );
