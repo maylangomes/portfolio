@@ -569,6 +569,9 @@ video {
 .mr-14 {
   margin-right: 3.5rem;
 }
+.mr-8 {
+  margin-right: 2rem;
+}
 .block {
   display: block;
 }
@@ -730,6 +733,10 @@ video {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -761,6 +768,14 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .font-bold {
   font-weight: 700;
@@ -919,6 +934,11 @@ body {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -936,6 +956,11 @@ body {
     padding-right: 5rem;
   }
 
+  .md\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -945,12 +970,25 @@ body {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
 
   .lg\:fixed {
     position: fixed;
+  }
+
+  .lg\:ml-14 {
+    margin-left: 3.5rem;
+  }
+
+  .lg\:mr-14 {
+    margin-right: 3.5rem;
   }
 
   .lg\:block {
@@ -981,6 +1019,22 @@ body {
   .lg\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  .lg\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .xl\:mr-14 {
+    margin-right: 3.5rem;
+  }
+
+  .xl\:ml-14 {
+    margin-left: 3.5rem;
   }
 }
 

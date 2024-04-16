@@ -75,19 +75,19 @@ export default function Home() {
                 </svg>
               </button>
             </div> */}
-            <a onClick={() => setShowForm(!showForm)} href="#welcome" className="text-white text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold float-left ml-14">Contact</a>
+            <a onClick={() => setShowForm(!showForm)} href="#welcome" className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold float-left xl:ml-14">Contact</a>
             <div className="hidden sm:block lg:flex items-center mx-auto">
-              <a href="#" className="text-white hover:bg-teal-400 rounded-lg px-3 py-2 font-bold mr-20">Projets</a>
+              <a href="#" className="text-white text-sm md:text-base hover:bg-teal-400 rounded-lg px-3 lg:px-3 py-2 font-bold mr-20">Projets</a>
               <div className="mx-auto">
-                <a href="#Puissance4" className="text-white hover:bg-teal-500 rounded-lg px-3 py-2 whitespace-nowrap">Puissance 4</a>
-                <a href="#" className="text-white hover:bg-teal-500 rounded-lg px-3 lg:px-4 py-2">Twitter</a>
-                <a href="#" className="text-white hover:bg-teal-500 rounded-lg px-3 lg:px-4 py-2">Cinema</a>
-                <a href="#" className="text-white hover:bg-teal-500 rounded-lg px-3 lg:px-4 py-2">Battleship</a>
-                <a href="#" className="text-white hover:bg-teal-500 rounded-lg px-3 lg:px-4 py-2 whitespace-nowrap">Sprite Generator</a>
-                <a href="#" className="text-white hover:bg-teal-500 rounded-lg px-3 lg:px-4 py-2">Morpion</a>
+                <a href="#Puissance4" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-3 py-2 whitespace-nowrap">Puissance 4</a>
+                <a href="#" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 lg:px-3 py-2">Twitter</a>
+                <a href="#" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 lg:px-3 py-2">Cinema</a>
+                <a href="#" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 lg:px-3 py-2">Battleship</a>
+                <a href="#" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 lg:px-3 py-2 whitespace-nowrap">Sprite Generator</a>
+                <a href="#" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 lg:px-3 py-2">Morpion</a>
               </div>
             </div>
-            <a href="CV_wac.pdf" download className="text-white text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold mr-14">CV</a>
+            <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold xl:mr-14">CV</a>
           </div>
         </div>
         <div className="sm:hidden" id="mobile-menu">
