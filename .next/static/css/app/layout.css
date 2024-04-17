@@ -1104,6 +1104,11 @@ body {
     padding-bottom: 2.5rem;
   }
 
+  .xl\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;

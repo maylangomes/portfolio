@@ -84,7 +84,7 @@ export default function Home() {
                 </svg>
               </button>
             </div> */}
-            <a onClick={() => setShowForm(!showForm)} href="#welcome" className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold lg:ml-20 xl:ml-40 hidden sm:block">Contact</a>
+            <a onClick={() => setShowForm(!showForm)} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold lg:ml-20 xl:ml-40 hidden sm:block">Contact</a>
             <div className="hidden sm:block lg:flex items-center mx-auto">
               <a href="#" className="text-white text-sm md:text-base hover:bg-teal-400 rounded-lg px-3 lg:px-3 py-2 font-bold lg:mr-1 xl:mr-20">Projets</a>
               <div className="mx-auto">
@@ -99,7 +99,7 @@ export default function Home() {
             <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold lg:mr-20 xl:mr-40 hidden sm:block">CV</a>
           </div>
         <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold xl:mr-14 float-right sm:hidden">CV</a>
-        <a onClick={() => {isMenuShow.current = false; isContactShow.current = true; setShowForm(!showForm);}} href="#welcome" className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold float-right xl:ml-14 sm:hidden">Contact</a>
+        <a onClick={() => {isMenuShow.current = false; isContactShow.current = true; setShowForm(!showForm);}} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold float-right xl:ml-14 sm:hidden">Contact</a>
         </div>
         <div className="sm:hidden">
           <GiHamburgerMenu onClick={() => {isMenuShow.current = true; isContactShow.current = false; setShowMenu(!showMenu);}} style={{color: "white", height: "3em", width: "3em"}}/>
@@ -115,11 +115,10 @@ export default function Home() {
             <a href="#" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Morpion</a>
           </div>
         </div>
-      </nav>
       <section className={showForm && isContactShow.current ? "" : "hidden"}>
         <div className="relative">
           <div className="absolute">
-            <form ref={form} onSubmit={sendEmail} className="bg-teal-600 px-8 lg:px-12 xl:px-16 absolute mt-44">
+            <form ref={form} onSubmit={sendEmail} className="bg-teal-600 px-8 lg:px-12 xl:px-16 absolute">
               <h1 className="text-white underline font-extrabold text-lg lg:text-xl xl:text-2xl py-4 lg:py-8 xl:py-10">Contacte-moi ici</h1>
               <div className="py-2">
               <label className="text-white">Nom </label>
@@ -138,6 +137,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </nav>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         {/* <section className="min-h-screen"> */}
         <section>
