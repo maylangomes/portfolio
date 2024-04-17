@@ -106,13 +106,13 @@ export default function Home() {
         </div>
         <div className={showMenu && isMenuShow.current ? "sm:hidden" : "hidden"} id="mobile-menu">
           <div className="px-2 pb-3 space-y-1">
-            <a href="#" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg font-bold">Projets</a>
-            <a href="#Puissance4" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Puissance 4</a>
-            <a href="#" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Twitter</a>
-            <a href="#" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Cinema</a>
-            <a href="#" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Battleship</a>
-            <a href="#" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Sprite Generator</a>
-            <a href="#" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Morpion</a>
+            <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg font-bold">Projets</a>
+            <a href="#Puissance4" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Puissance 4</a>
+            <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Twitter</a>
+            <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Cinema</a>
+            <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Battleship</a>
+            <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Sprite Generator</a>
+            <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Morpion</a>
           </div>
         </div>
       <section className={showForm && isContactShow.current ? "" : "hidden"}>
@@ -142,7 +142,7 @@ export default function Home() {
         {/* <section className="min-h-screen"> */}
         <section>
           <div className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 id="welcome" className=" font-glametrix italic text-3xl mt-20">Bienvenue sur mon portfolio !</h1>
+            <h1 id="welcome" className=" font-glametrix italic text-3xl mt-20">Bienvenue sur mon <span className="whitespace-nowrap">portfolio !</span></h1>
             <ul className="flex">
               <li className="mt-20">
                 <BsFillMoonStarsFill
