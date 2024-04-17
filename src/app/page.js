@@ -35,8 +35,17 @@ import emailjs from '@emailjs/browser';
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
-  const [showForm, setShowForm] = useState(true);
+  const [showForm, setShowForm] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const isMenuShow = useRef(true);
+  const isContactShow = useRef(true);
+
+  function showContactHiddenMenu () {
+    () => {
+      setShowForm(!showForm);
+
+    }
+  }
 
     const form = useRef();
   
@@ -75,9 +84,9 @@ export default function Home() {
                 </svg>
               </button>
             </div> */}
-            <a onClick={() => setShowForm(!showForm)} href="#welcome" className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold xl:ml-14 hidden sm:block">Contact</a>
+            <a onClick={() => setShowForm(!showForm)} href="#welcome" className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold lg:ml-20 xl:ml-40 hidden sm:block">Contact</a>
             <div className="hidden sm:block lg:flex items-center mx-auto">
-              <a href="#" className="text-white text-sm md:text-base hover:bg-teal-400 rounded-lg px-3 lg:px-3 py-2 font-bold mr-20">Projets</a>
+              <a href="#" className="text-white text-sm md:text-base hover:bg-teal-400 rounded-lg px-3 lg:px-3 py-2 font-bold lg:mr-1 xl:mr-20">Projets</a>
               <div className="mx-auto">
                 <a href="#Puissance4" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-3 py-2 whitespace-nowrap">Puissance 4</a>
                 <a href="#" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 lg:px-3 py-2">Twitter</a>
@@ -87,15 +96,15 @@ export default function Home() {
                 <a href="#" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 lg:px-3 py-2">Morpion</a>
               </div>
             </div>
-            <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold xl:mr-14 hidden sm:block">CV</a>
+            <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold lg:mr-20 xl:mr-40 hidden sm:block">CV</a>
           </div>
         <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold xl:mr-14 float-right sm:hidden">CV</a>
-        <a onClick={() => setShowForm(!showForm)} href="#welcome" className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold float-right xl:ml-14 sm:hidden">Contact</a>
+        <a onClick={() => {isMenuShow.current = false; isContactShow.current = true; setShowForm(!showForm);}} href="#welcome" className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold float-right xl:ml-14 sm:hidden">Contact</a>
         </div>
         <div className="sm:hidden">
-          <GiHamburgerMenu onClick={() => setShowMenu(!showMenu)} style={{color: "white", height: "3em", width: "3em"}}/>
+          <GiHamburgerMenu onClick={() => {isMenuShow.current = true; isContactShow.current = false; setShowMenu(!showMenu);}} style={{color: "white", height: "3em", width: "3em"}}/>
         </div>
-        <div className={showMenu ? "sm:hidden" : "hidden"} id="mobile-menu">
+        <div className={showMenu && isMenuShow.current ? "sm:hidden" : "hidden"} id="mobile-menu">
           <div className="px-2 pb-3 space-y-1">
             <a href="#" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg font-bold">Projets</a>
             <a href="#Puissance4" className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Puissance 4</a>
@@ -107,26 +116,28 @@ export default function Home() {
           </div>
         </div>
       </nav>
-      <div className={showForm ? "hidden" : ""}>
-        <div className="absolute">
-          <form ref={form} onSubmit={sendEmail} className="bg-teal-600 lg:px-12 xl:px-16 absolute mt-44">
-            <h1 className="text-white underline font-extrabold lg:text-xl xl:text-2xl lg:py-8 xl:py-10">Contacte-moi ici</h1>
-            <div className="py-2">
-            <label className="text-white">Nom </label>
-            <input type="text" name="user_name" />
-            </div>
-            <div className="py-2">
-            <label className="text-white">Email *</label>
-            <input type="email" name="user_email" required />
-            </div>
-            <div className="py-2">
-            <label className="text-white">Message *</label>
-            <textarea rows={4} name="message" required/>
-            </div>
-            <input className="text-white font-bold my-6 mb-8 px-16 py-3 bg-slate-400 cursor-pointer" type="submit" value="Envoyer" />
-          </form>
+      <section className={showForm && isContactShow.current ? "" : "hidden"}>
+        <div className="relative">
+          <div className="absolute">
+            <form ref={form} onSubmit={sendEmail} className="bg-teal-600 px-8 lg:px-12 xl:px-16 absolute mt-44">
+              <h1 className="text-white underline font-extrabold text-lg lg:text-xl xl:text-2xl py-4 lg:py-8 xl:py-10">Contacte-moi ici</h1>
+              <div className="py-2">
+              <label className="text-white">Nom </label>
+              <input type="text" name="user_name" />
+              </div>
+              <div className="py-2">
+              <label className="text-white">Email *</label>
+              <input type="email" name="user_email" required />
+              </div>
+              <div className="py-2">
+              <label className="text-white">Message *</label>
+              <textarea rows={4} name="message" required/>
+              </div>
+              <input className="text-white font-bold my-6 mb-8 px-16 py-3 bg-slate-400 cursor-pointer" type="submit" value="Envoyer" />
+            </form>
+          </div>
         </div>
-      </div>
+      </section>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         {/* <section className="min-h-screen"> */}
         <section>

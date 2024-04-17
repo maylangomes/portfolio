@@ -513,11 +513,35 @@ video {
 .relative {
   position: relative;
 }
-.left-1 {
-  left: 0.25rem;
-}
 .right-1 {
   right: 0.25rem;
+}
+.left-10 {
+  left: 2.5rem;
+}
+.left-9 {
+  left: 2.25rem;
+}
+.left-96 {
+  left: 24rem;
+}
+.right-96 {
+  right: 24rem;
+}
+.left-52 {
+  left: 13rem;
+}
+.right-52 {
+  right: 13rem;
+}
+.right-10 {
+  right: 2.5rem;
+}
+.left-64 {
+  left: 16rem;
+}
+.right-full {
+  right: 100%;
 }
 .z-10 {
   z-index: 10;
@@ -556,6 +580,15 @@ video {
 }
 .mt-44 {
   margin-top: 11rem;
+}
+.ml-10 {
+  margin-left: 2.5rem;
+}
+.ml-5 {
+  margin-left: 1.25rem;
+}
+.ml-96 {
+  margin-left: 24rem;
 }
 .block {
   display: block;
@@ -604,6 +637,9 @@ video {
 }
 .items-center {
   align-items: center;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 .justify-center {
   justify-content: center;
@@ -702,6 +738,10 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -714,13 +754,13 @@ video {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 .pb-3 {
   padding-bottom: 0.75rem;
@@ -915,8 +955,16 @@ body {
 
 @media (min-width: 768px) {
 
-  .md\:block {
-    display: block;
+  .md\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .md\:mr-20 {
+    margin-right: 5rem;
+  }
+
+  .md\:mr-10 {
+    margin-right: 2.5rem;
   }
 
   .md\:h-96 {
@@ -952,6 +1000,30 @@ body {
 
   .lg\:fixed {
     position: fixed;
+  }
+
+  .lg\:mr-40 {
+    margin-right: 10rem;
+  }
+
+  .lg\:ml-40 {
+    margin-left: 10rem;
+  }
+
+  .lg\:mr-20 {
+    margin-right: 5rem;
+  }
+
+  .lg\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .lg\:mr-1 {
+    margin-right: 0.25rem;
+  }
+
+  .lg\:ml-20 {
+    margin-left: 5rem;
   }
 
   .lg\:block {
@@ -1008,6 +1080,18 @@ body {
 
   .xl\:mr-14 {
     margin-right: 3.5rem;
+  }
+
+  .xl\:ml-40 {
+    margin-left: 10rem;
+  }
+
+  .xl\:mr-40 {
+    margin-right: 10rem;
+  }
+
+  .xl\:mr-20 {
+    margin-right: 5rem;
   }
 
   .xl\:px-16 {
