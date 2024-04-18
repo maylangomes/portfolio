@@ -5,6 +5,7 @@ import "./globals.css"
 import { useState } from "react";
 import Image from 'next/legacy/image';
 import { BsDownload } from "react-icons/bs";
+import {motion} from "framer-motion";
 //import Puissance4 from '../public/puissance4.png';
 
 // export default function test() {
@@ -74,7 +75,7 @@ export default function Home() {
       <title>Portfolio</title>
       <nav className="bg-teal-600 fixed w-full z-10">
         <div className="">
-          <div className="flex items-center justify-between h-6 sm:h-16">
+          <motion.div  className="flex items-center justify-between h-6 sm:h-16">
             {/* <div className="flex sm:hidden">
               <button type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-teal-400 hover:bg-teal-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                 <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
@@ -85,7 +86,7 @@ export default function Home() {
                 </svg>
               </button>
             </div> */}
-            <a onClick={() => setShowForm(!showForm)} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold lg:ml-20 xl:ml-40 hidden sm:block">Contact</a>
+            <a onClick={() => setShowForm(!showForm)} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg cursor-pointer px-3 py-2 font-bold lg:ml-20 xl:ml-40 hidden sm:block">Contact</a>
             <div className="hidden sm:block lg:flex items-center mx-auto">
               <a href="#" className="text-white text-sm md:text-base hover:bg-teal-400 rounded-lg px-1 py-1 lg:px-3 lg:py-2 font-bold lg:mr-1 xl:mr-20">Projets</a>
               <div className="mx-auto">
@@ -98,9 +99,9 @@ export default function Home() {
               </div>
             </div>
             <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold lg:mr-20 xl:mr-40 hidden sm:block"><BsDownload style={{marginLeft: "4px"}}/>CV</a>
-          </div>
+          </motion.div>
         <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold xl:mr-14 float-right sm:hidden"><BsDownload style={{marginLeft: "4px"}}/>CV</a>
-        <a onClick={() => {isMenuShow.current = false; isContactShow.current = true; setShowForm(!showForm);}} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold float-right xl:ml-14 sm:hidden">Contact</a>
+        <a onClick={() => {isMenuShow.current = false; isContactShow.current = true; setShowForm(!showForm);}} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg cursor-pointer px-3 font-bold float-right xl:ml-14 sm:hidden">Contact</a>
         </div>
         <div className="sm:hidden">
           <GiHamburgerMenu onClick={() => {isMenuShow.current = true; isContactShow.current = false; setShowMenu(!showMenu);}} style={{color: "white", height: "3em", width: "3em"}}/>
@@ -145,12 +146,12 @@ export default function Home() {
           <div className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 id="welcome" className=" font-glametrix italic text-3xl mt-20">Bienvenue sur mon <span className="whitespace-nowrap">portfolio !</span></h1>
             <ul className="flex">
-              <li className="mt-20">
+              <motion.li whileHover={{scale: 1.2}} whileTap={{scale: 1}} className="mt-20">
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className=" cursor-pointer text-3xl"
                 />
-              </li>
+              </motion.li>
               {/* <li className="lg:fixed hidden lg:block">
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-2 py-2 rounded-xl ml-8 mt-24"
@@ -167,7 +168,7 @@ export default function Home() {
               </li> */}
             </ul>
           </div>
-          <div className="text-center py-10">
+          <motion.div initial={{x:100}} animate={{x:0}} className="text-center py-10">
             <h2 className="text-5xl py-2 text-teal-600 dark:text-teal-400 md:text-6xl">
               Maylan Gomes
             </h2>
@@ -184,7 +185,7 @@ export default function Home() {
             {/* <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
             </div> */}
-          </div>
+          </motion.div>
         </section>
         <section className="py-10">
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
