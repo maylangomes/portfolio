@@ -41,6 +41,7 @@ export default function Home() {
   const [showMenu, setShowMenu] = useState(false);
   const isMenuShow = useRef(true);
   const isContactShow = useRef(true);
+  const text = "Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages.".split(" ");
 
   function showContactHiddenMenu () {
     () => {
@@ -176,7 +177,9 @@ export default function Home() {
               Développeur full-stack.
             </h3>
             <p className="text-lg py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-2xl mx-auto md:text-xl">
-              Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages.
+              {text.map((el, i) => (
+                <motion.span initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.25, delay: i/10,}} key={i}>{el}{" "}</motion.span>
+              ))}
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <AiFillLinkedin />
