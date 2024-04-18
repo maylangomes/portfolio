@@ -76,7 +76,7 @@ export default function Home() {
       <title>Portfolio</title>
       <nav className="bg-teal-600 fixed w-full z-10">
         <div className="">
-          <motion.div  className="flex items-center justify-between h-6 sm:h-16">
+          <div  className="flex items-center justify-between h-6 sm:h-16">
             {/* <div className="flex sm:hidden">
               <button type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-teal-400 hover:bg-teal-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                 <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
@@ -100,7 +100,7 @@ export default function Home() {
               </div>
             </div>
             <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold lg:mr-20 xl:mr-40 hidden sm:block"><BsDownload style={{marginLeft: "4px"}}/>CV</a>
-          </motion.div>
+          </div>
         <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold xl:mr-14 float-right sm:hidden"><BsDownload style={{marginLeft: "4px"}}/>CV</a>
         <a onClick={() => {isMenuShow.current = false; isContactShow.current = true; setShowForm(!showForm);}} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg cursor-pointer px-3 font-bold float-right xl:ml-14 sm:hidden">Contact</a>
         </div>
@@ -147,12 +147,19 @@ export default function Home() {
           <div className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 id="welcome" className=" font-glametrix italic text-3xl mt-20">Bienvenue sur mon <span className="whitespace-nowrap">portfolio !</span></h1>
             <ul className="flex">
+              {/* <li className="mt-20">
+                <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className=" cursor-pointer text-3xl"
+                />
+              </li> */}
               <motion.li whileHover={{scale: 1.2}} whileTap={{scale: 1}} className="mt-20">
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className=" cursor-pointer text-3xl"
                 />
               </motion.li>
+
               {/* <li className="lg:fixed hidden lg:block">
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-2 py-2 rounded-xl ml-8 mt-24"
@@ -169,7 +176,7 @@ export default function Home() {
               </li> */}
             </ul>
           </div>
-          <motion.div initial={{x:100}} animate={{x:0}} className="text-center py-10">
+          <div className="text-center py-10">
             <h2 className="text-5xl py-2 text-teal-600 dark:text-teal-400 md:text-6xl">
               Maylan Gomes
             </h2>
@@ -181,6 +188,7 @@ export default function Home() {
                 <motion.span initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.25, delay: i/10,}} key={i}>{el}{" "}</motion.span>
               ))}
             </p>
+
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <AiFillLinkedin />
               <AiFillGithub />
@@ -188,7 +196,7 @@ export default function Home() {
             {/* <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
             </div> */}
-          </motion.div>
+          </div>
         </section>
         <section className="py-10">
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
