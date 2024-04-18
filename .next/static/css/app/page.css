@@ -513,44 +513,11 @@ video {
 .relative {
   position: relative;
 }
-.right-1 {
-  right: 0.25rem;
-}
-.left-10 {
-  left: 2.5rem;
-}
-.left-9 {
-  left: 2.25rem;
-}
-.left-96 {
-  left: 24rem;
-}
-.right-96 {
-  right: 24rem;
-}
-.left-52 {
-  left: 13rem;
-}
-.right-52 {
-  right: 13rem;
-}
-.right-10 {
-  right: 2.5rem;
-}
-.left-64 {
-  left: 16rem;
-}
-.right-full {
-  right: 100%;
-}
 .z-10 {
   z-index: 10;
 }
 .float-right {
   float: right;
-}
-.float-left {
-  float: left;
 }
 .mx-auto {
   margin-left: auto;
@@ -569,26 +536,11 @@ video {
 .ml-8 {
   margin-left: 2rem;
 }
-.mr-20 {
-  margin-right: 5rem;
-}
 .mt-20 {
   margin-top: 5rem;
 }
 .mt-24 {
   margin-top: 6rem;
-}
-.mt-44 {
-  margin-top: 11rem;
-}
-.ml-10 {
-  margin-left: 2.5rem;
-}
-.ml-5 {
-  margin-left: 1.25rem;
-}
-.ml-96 {
-  margin-left: 24rem;
 }
 .block {
   display: block;
@@ -637,9 +589,6 @@ video {
 }
 .items-center {
   align-items: center;
-}
-.justify-end {
-  justify-content: flex-end;
 }
 .justify-center {
   justify-content: center;
@@ -761,6 +710,10 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 .pb-3 {
   padding-bottom: 0.75rem;
@@ -955,18 +908,6 @@ body {
 
 @media (min-width: 768px) {
 
-  .md\:ml-20 {
-    margin-left: 5rem;
-  }
-
-  .md\:mr-20 {
-    margin-right: 5rem;
-  }
-
-  .md\:mr-10 {
-    margin-right: 2.5rem;
-  }
-
   .md\:h-96 {
     height: 24rem;
   }
@@ -1002,28 +943,16 @@ body {
     position: fixed;
   }
 
-  .lg\:mr-40 {
-    margin-right: 10rem;
-  }
-
-  .lg\:ml-40 {
-    margin-left: 10rem;
-  }
-
-  .lg\:mr-20 {
-    margin-right: 5rem;
-  }
-
-  .lg\:mr-10 {
-    margin-right: 2.5rem;
+  .lg\:ml-20 {
+    margin-left: 5rem;
   }
 
   .lg\:mr-1 {
     margin-right: 0.25rem;
   }
 
-  .lg\:ml-20 {
-    margin-left: 5rem;
+  .lg\:mr-20 {
+    margin-right: 5rem;
   }
 
   .lg\:block {
@@ -1066,6 +995,11 @@ body {
     padding-bottom: 2rem;
   }
 
+  .lg\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1078,20 +1012,20 @@ body {
     margin-left: 3.5rem;
   }
 
-  .xl\:mr-14 {
-    margin-right: 3.5rem;
-  }
-
   .xl\:ml-40 {
     margin-left: 10rem;
   }
 
-  .xl\:mr-40 {
-    margin-right: 10rem;
+  .xl\:mr-14 {
+    margin-right: 3.5rem;
   }
 
   .xl\:mr-20 {
     margin-right: 5rem;
+  }
+
+  .xl\:mr-40 {
+    margin-right: 10rem;
   }
 
   .xl\:px-16 {
@@ -1102,11 +1036,6 @@ body {
   .xl\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-  }
-
-  .xl\:px-1 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
   }
 
   .xl\:text-2xl {

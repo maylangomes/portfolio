@@ -86,14 +86,14 @@ export default function Home() {
             </div> */}
             <a onClick={() => setShowForm(!showForm)} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold lg:ml-20 xl:ml-40 hidden sm:block">Contact</a>
             <div className="hidden sm:block lg:flex items-center mx-auto">
-              <a href="#" className="text-white text-sm md:text-base hover:bg-teal-400 rounded-lg px-3 lg:px-3 py-2 font-bold lg:mr-1 xl:mr-20">Projets</a>
+              <a href="#" className="text-white text-sm md:text-base hover:bg-teal-400 rounded-lg px-1 py-1 lg:px-3 lg:py-2 font-bold lg:mr-1 xl:mr-20">Projets</a>
               <div className="mx-auto">
-                <a href="#Puissance4" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-3 py-2 whitespace-nowrap">Puissance 4</a>
-                <a href="#" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 lg:px-3 py-2">Twitter</a>
-                <a href="#" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 lg:px-3 py-2">Cinema</a>
-                <a href="#" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 lg:px-3 py-2">Battleship</a>
-                <a href="#" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 lg:px-3 py-2 whitespace-nowrap">Sprite Generator</a>
-                <a href="#" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 lg:px-3 py-2">Morpion</a>
+                <a href="#Puissance4" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Puissance 4</a>
+                <a href="#Twitter" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Twitter</a>
+                <a href="#Morpion" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Morpion</a>
+                <a href="#Cinema" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Cinema</a>
+                <a href="#Battleship" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Battleship</a>
+                <a href="#Sprite" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Sprite Generator</a>
               </div>
             </div>
             <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold lg:mr-20 xl:mr-40 hidden sm:block">CV</a>
@@ -108,11 +108,11 @@ export default function Home() {
           <div className="px-2 pb-3 space-y-1">
             <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg font-bold">Projets</a>
             <a href="#Puissance4" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Puissance 4</a>
-            <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Twitter</a>
-            <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Cinema</a>
-            <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Battleship</a>
-            <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Sprite Generator</a>
-            <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Morpion</a>
+            <a href="#Twitter" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Twitter</a>
+            <a href="#Cinema" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Cinema</a>
+            <a href="#Battleship" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Battleship</a>
+            <a href="#Sprite" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Sprite Generator</a>
+            <a href="#Morpion" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Morpion</a>
           </div>
         </div>
       <section className={showForm && isContactShow.current ? "" : "hidden"}>
@@ -187,7 +187,7 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
+            <div id="Puissance4" className="basis-1/3 flex-1 ">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
@@ -195,86 +195,86 @@ export default function Home() {
               <Image
                 className="rounded-lg object-cover"
                 alt="puissance4"
-                width={"100"}
+                width={"85"}
                 height={"100"}
                 layout="responsive"
                 priority
                 src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance4.png"}
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div id="Twitter" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
             <Image
                 className="rounded-lg object-cover"
-                alt="puissance4"
-                width={"100"}
+                alt="twitter"
+                width={"85"}
                 height={"100"}
                 layout="responsive"
                 priority
-                src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance4.png"}
+                src={"https://raw.githubusercontent.com/maylangomes/Assets/main/twitter.png"}
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div id="Morpion" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
             <Image
                 className="rounded-lg object-cover"
-                alt="puissance4"
-                width={"100"}
+                alt="morpion"
+                width={"85"}
                 height={"100"}
                 layout="responsive"
                 priority
-                src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance4.png"}
+                src={"https://raw.githubusercontent.com/maylangomes/Assets/main/Morpion.png"}
               />
             </div>
-            <div id="Puissance4" className="basis-1/3 flex-1">
+            <div id="Cinema" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
             <Image
                 className="rounded-lg object-cover"
-                alt="puissance4"
-                width={"100"}
+                alt="cinema"
+                width={"85"}
                 height={"100"}
                 layout="responsive"
                 priority
-                src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance4.png"}
+                src={"https://raw.githubusercontent.com/maylangomes/Assets/main/cinema.png"}
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div id="Battleship" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
             <Image
                 className="rounded-lg object-cover"
-                alt="puissance4"
-                width={"100"}
+                alt="battleship"
+                width={"200"}
                 height={"100"}
                 layout="responsive"
                 priority
-                src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance4.png"}
+                src={"https://raw.githubusercontent.com/maylangomes/Assets/main/battleship.png"}
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div id="Sprite" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
             </p>
             <Image
                 className="rounded-lg object-cover"
-                alt="puissance4"
-                width={"100"}
+                alt="sprite"
+                width={"200"}
                 height={"100"}
                 layout="responsive"
                 priority
-                src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance4.png"}
+                src={"https://raw.githubusercontent.com/maylangomes/Assets/main/sprite.png"}
               />
             </div>
           </div>
