@@ -145,7 +145,7 @@ export default function Home() {
         {/* <section className="min-h-screen"> */}
         <section>
           <div className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 id="welcome" className=" font-glametrix italic text-3xl mt-20">Bienvenue sur mon <span className="whitespace-nowrap">portfolio !</span></h1>
+            <h1 id="welcome" className="text-black font-glametrix italic text-3xl mt-20">Bienvenue sur mon <span className="whitespace-nowrap">portfolio !</span></h1>
             <ul className="flex">
               {/* <li className="mt-20">
                 <BsFillMoonStarsFill
