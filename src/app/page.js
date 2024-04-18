@@ -4,6 +4,7 @@
 import "./globals.css"
 import { useState } from "react";
 import Image from 'next/legacy/image';
+import { BsDownload } from "react-icons/bs";
 //import Puissance4 from '../public/puissance4.png';
 
 // export default function test() {
@@ -96,9 +97,9 @@ export default function Home() {
                 <a href="#Sprite" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Sprite Generator</a>
               </div>
             </div>
-            <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold lg:mr-20 xl:mr-40 hidden sm:block">CV</a>
+            <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold lg:mr-20 xl:mr-40 hidden sm:block"><BsDownload style={{marginLeft: "4px"}}/>CV</a>
           </div>
-        <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold xl:mr-14 float-right sm:hidden">CV</a>
+        <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold xl:mr-14 float-right sm:hidden"><BsDownload style={{marginLeft: "4px"}}/>CV</a>
         <a onClick={() => {isMenuShow.current = false; isContactShow.current = true; setShowForm(!showForm);}} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold float-right xl:ml-14 sm:hidden">Contact</a>
         </div>
         <div className="sm:hidden">
@@ -199,7 +200,7 @@ export default function Home() {
                 height={"100"}
                 layout="responsive"
                 priority
-                src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance4.png"}
+                src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance_4.png"}
               />
             </div>
             <div id="Twitter" className="basis-1/3 flex-1">
