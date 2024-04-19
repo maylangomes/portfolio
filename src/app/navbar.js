@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react';
 import { BsDownload} from "react-icons/bs";
 import {motion} from "framer-motion";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { GrHomeOption } from "react-icons/gr";
+import { RiHome2Line } from "react-icons/ri";
 
 export default function Navbar() {
     const [showMenu, setShowMenu] = useState(false);
@@ -48,7 +48,7 @@ export default function Navbar() {
                 </div> */}
                 <a onClick={() => setShowForm(!showForm)} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg cursor-pointer px-0.5 py-1 md:px-3 md:py-2 font-bold lg:ml-20 xl:ml-40 hidden sm:block">Contact</a>
                 <div className="hidden sm:flex items-center mx-auto">
-                <a href="#" className="text-white text-sm md:text-base hover:bg-teal-400 rounded-lg px-1 py-1 lg:px-3 lg:py-2 font-bold md:mr-5 lg:mr-3 xl:mr-15"><GrHomeOption style={{fontSize: "30px"}}/></a>
+                <a href="#" className="text-white text-sm md:text-base hover:bg-teal-400 rounded-lg px-1 py-1 lg:px-3 lg:py-2 font-bold md:mr-5 lg:mr-3 xl:mr-15"><RiHome2Line style={{fontSize: "30px"}}/></a>
                 <div className="mx-auto">
                     <a href="#Puissance4" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Puissance 4</a>
                     <a href="#Twitter" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Twitter</a>
@@ -64,18 +64,28 @@ export default function Navbar() {
             <a onClick={() => {isMenuShow.current = false; isContactShow.current = true; setShowForm(!showForm);}} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg cursor-pointer px-3 font-bold float-right xl:ml-14 sm:hidden">Contact</a>
             </div>
             <div className="sm:hidden">
-            <GiHamburgerMenu onClick={() => {isMenuShow.current = true; isContactShow.current = false; setShowMenu(!showMenu);}} style={{color: "white", height: "3em", width: "3em"}}/>
+            <GiHamburgerMenu onClick={() => {isMenuShow.current = true; isContactShow.current = false; setShowMenu(!showMenu);}} style={{color: "white", height: "3em", width: "3em", cursor: "pointer"}}/>
             </div>
             <div className={showMenu && isMenuShow.current ? "sm:hidden" : "hidden"} id="mobile-menu">
-            <div className="px-2 pb-3 space-y-1">
+            <motion.div
+            initial={{
+                opacity: 0,
+            }}
+            whileInView={{
+                opacity: 1,
+                transition: {
+                    duration: 0.5
+                }
+            }}
+            className="px-2 pb-3 space-y-1">
                 <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg font-bold">Home</a>
                 <a href="#Puissance4" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Puissance 4</a>
                 <a href="#Twitter" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Twitter</a>
+                <a href="#Morpion" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Morpion</a>
                 <a href="#Cinema" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Cinema</a>
                 <a href="#Battleship" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Battleship</a>
                 <a href="#Sprite" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Sprite Generator</a>
-                <a href="#Morpion" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Morpion</a>
-            </div>
+            </motion.div>
             </div>
             <section className={showForm && isContactShow.current ? "" : "hidden"}>
             <div className="relative">
@@ -87,11 +97,11 @@ export default function Navbar() {
                 whileInView={{
                     opacity: 1,
                     transition: {
-                    duration: 0.5
+                        duration: 0.5
                     }
                 }}
                 ref={form} onSubmit={sendEmail} className="bg-teal-600 px-8 lg:px-12 xl:px-16 absolute">
-                <h1 className="text-white underline font-extrabold text-lg lg:text-xl xl:text-2xl py-4 lg:py-8 xl:py-10">Contacte-moi ici</h1>
+                <h1 className="text-white font-extrabold text-lg lg:text-xl xl:text-2xl py-4 lg:py-8 xl:py-10">Pour m'envoyer un email :</h1>
                 <div className="py-2">
                 <label className="text-white">Nom </label>
                 <input type="text" name="user_name" />
