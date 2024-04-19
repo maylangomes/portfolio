@@ -13,6 +13,7 @@ import {
   AiOutlineToTop
 } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Card from "./card";
 
 export default function Home() {
 
@@ -21,6 +22,7 @@ export default function Home() {
   const [showMenu, setShowMenu] = useState(false);
   const isMenuShow = useRef(true);
   const isContactShow = useRef(true);
+  const items = ["Item 1", "item 2", "item 3"]
   const text = "Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages.".split(" ");
 
   function showContactHiddenMenu () {
@@ -185,7 +187,25 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div id="Puissance4" className="basis-1/3 flex-1 ">
+            <motion.div
+              whileHover={{
+                scale: 1.03
+              }}
+              initial={{
+                opacity: 0,
+                x: -200
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1
+                }
+              }}
+              viewport={{
+                once: true
+              }}
+              id="Puissance4" className="basis-1/3 flex-1 ">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
@@ -199,8 +219,26 @@ export default function Home() {
                 priority
                 src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance_4.png"}
               />
-            </div>
-            <div id="Twitter" className="basis-1/3 flex-1">
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.03
+              }}
+              initial={{
+                opacity: 0,
+                x: 200
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1
+                }
+              }}
+              viewport={{
+                once: true
+              }}
+              id="Twitter" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
@@ -214,8 +252,26 @@ export default function Home() {
                 priority
                 src={"https://raw.githubusercontent.com/maylangomes/Assets/main/twitter.png"}
               />
-            </div>
-            <div id="Morpion" className="basis-1/3 flex-1">
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.03
+              }}
+              initial={{
+                opacity: 0,
+                x: -200
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1
+                }
+              }}
+              viewport={{
+                once: true
+              }}
+              id="Morpion" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
@@ -229,8 +285,26 @@ export default function Home() {
                 priority
                 src={"https://raw.githubusercontent.com/maylangomes/Assets/main/Morpion.png"}
               />
-            </div>
-            <div id="Cinema" className="basis-1/3 flex-1">
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.03
+              }}
+              initial={{
+                opacity: 0,
+                x: 200
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1
+                }
+              }}
+              viewport={{
+                once: true
+              }}
+              id="Cinema" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
@@ -244,8 +318,26 @@ export default function Home() {
                 priority
                 src={"https://raw.githubusercontent.com/maylangomes/Assets/main/cinema.png"}
               />
-            </div>
-            <div id="Battleship" className="basis-1/3 flex-1">
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.03
+              }}
+              initial={{
+                opacity: 0,
+                x: -200
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1
+                }
+              }}
+              viewport={{
+                once: true
+              }}
+              id="Battleship" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
@@ -259,8 +351,26 @@ export default function Home() {
                 priority
                 src={"https://raw.githubusercontent.com/maylangomes/Assets/main/battleship.png"}
               />
-            </div>
-            <div id="Sprite" className="basis-1/3 flex-1">
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.03
+              }}
+              initial={{
+                opacity: 0,
+                x: 200
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1
+                }
+              }}
+              viewport={{
+                once: true
+              }}
+              id="Sprite" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
               Puissance 4 : projet développé en <span className="text-teal-600">javascript natif </span>
               (seul, 2 semaines).
@@ -274,7 +384,7 @@ export default function Home() {
                 priority
                 src={"https://raw.githubusercontent.com/maylangomes/Assets/main/sprite.png"}
               />
-            </div>
+            </motion.div>
           </div>
         </section>
       </main>
