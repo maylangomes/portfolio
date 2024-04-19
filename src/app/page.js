@@ -2,37 +2,17 @@
 /* eslint-disable jsx-a11y/alt-text */
 'use client'
 import "./globals.css"
-import { useState } from "react";
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import Image from 'next/legacy/image';
-import { BsDownload } from "react-icons/bs";
+import { BsDownload, BsFillMoonStarsFill } from "react-icons/bs";
 import {motion} from "framer-motion";
-//import Puissance4 from '../public/puissance4.png';
-
-// export default function test() {
-//   return (
-//     <Image
-//     src={"/puissance4.png"}
-//     alt="picture"
-//     width={100}
-//     height={100}
-//     priority
-//     //sizes="100vw"
-//     />
-//   )
-// }
-
-
-
 import {
   AiFillGithub,
-  AiFillLinkedin
+  AiFillLinkedin,
+  AiOutlineToTop
 } from "react-icons/ai";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
-//import Image from "next/image";
-// import puissance4 from "../public/puissance4.png";
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
 
 export default function Home() {
 
@@ -88,8 +68,8 @@ export default function Home() {
               </button>
             </div> */}
             <a onClick={() => setShowForm(!showForm)} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg cursor-pointer px-3 py-2 font-bold lg:ml-20 xl:ml-40 hidden sm:block">Contact</a>
-            <div className="hidden sm:block lg:flex items-center mx-auto">
-              <a href="#" className="text-white text-sm md:text-base hover:bg-teal-400 rounded-lg px-1 py-1 lg:px-3 lg:py-2 font-bold lg:mr-1 xl:mr-20">Projets</a>
+            <div className="hidden sm:block md:flex items-center mx-auto">
+              <a href="#" className="text-white text-sm md:text-base hover:bg-teal-400 rounded-lg px-1 py-1 lg:px-3 lg:py-2 font-bold lg:mr-1 xl:mr-20">Home</a>
               <div className="mx-auto">
                 <a href="#Puissance4" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Puissance 4</a>
                 <a href="#Twitter" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Twitter</a>
@@ -145,7 +125,7 @@ export default function Home() {
         {/* <section className="min-h-screen"> */}
         <section>
           <div className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 id="welcome" className="text-black font-glametrix italic text-3xl mt-20">Bienvenue sur mon <span className="whitespace-nowrap">portfolio !</span></h1>
+            <h1 id="welcome" className="text-black dark:text-white font-glametrix italic text-3xl mt-20">Bienvenue sur mon <span className="whitespace-nowrap">portfolio !</span></h1>
             <ul className="flex">
               {/* <li className="mt-20">
                 <BsFillMoonStarsFill
@@ -155,7 +135,11 @@ export default function Home() {
               </li> */}
               <motion.li whileHover={{scale: 1.2}} whileTap={{scale: 1}} className="mt-20">
                 <BsFillMoonStarsFill
-                  style={{color: "black"}}
+                  style={
+                    darkMode ?
+                    {color: "white"}
+                    : {color: "black"}
+                  }
                   onClick={() => setDarkMode(!darkMode)}
                   className="cursor-pointer text-3xl"
                 />

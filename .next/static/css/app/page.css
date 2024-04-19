@@ -504,6 +504,9 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+.visible {
+  visibility: visible;
+}
 .fixed {
   position: fixed;
 }
@@ -808,6 +811,10 @@ video {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -918,6 +925,10 @@ body {
 }
 
 @media (min-width: 768px) {
+
+  .md\:flex {
+    display: flex;
+  }
 
   .md\:h-96 {
     height: 24rem;
