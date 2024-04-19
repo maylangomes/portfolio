@@ -155,8 +155,9 @@ export default function Home() {
               </li> */}
               <motion.li whileHover={{scale: 1.2}} whileTap={{scale: 1}} className="mt-20">
                 <BsFillMoonStarsFill
+                  style={{color: "black"}}
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-3xl"
+                  className="cursor-pointer text-3xl"
                 />
               </motion.li>
 
@@ -180,7 +181,7 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 dark:text-teal-400 md:text-6xl">
               Maylan Gomes
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white sm:text-3xl">
+            <h3 className="text-black text-2xl py-2 dark:text-white sm:text-3xl">
               Développeur full-stack.
             </h3>
             <p className="text-lg py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-2xl mx-auto md:text-xl">
