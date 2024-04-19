@@ -10,9 +10,9 @@ import {motion} from "framer-motion";
 import {
   AiFillGithub,
   AiFillLinkedin,
-  AiOutlineToTop
 } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { GrHomeOption } from "react-icons/gr";
 import Card from "./card";
 
 export default function Home() {
@@ -22,7 +22,6 @@ export default function Home() {
   const [showMenu, setShowMenu] = useState(false);
   const isMenuShow = useRef(true);
   const isContactShow = useRef(true);
-  const items = ["Item 1", "item 2", "item 3"]
   const text = "Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages.".split(" ");
 
   function showContactHiddenMenu () {
@@ -69,19 +68,19 @@ export default function Home() {
                 </svg>
               </button>
             </div> */}
-            <a onClick={() => setShowForm(!showForm)} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg cursor-pointer px-3 py-2 font-bold lg:ml-20 xl:ml-40 hidden sm:block">Contact</a>
-            <div className="hidden sm:block md:flex items-center mx-auto">
-              <a href="#" className="text-white text-sm md:text-base hover:bg-teal-400 rounded-lg px-1 py-1 lg:px-3 lg:py-2 font-bold lg:mr-1 xl:mr-20">Home</a>
+            <a onClick={() => setShowForm(!showForm)} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg cursor-pointer px-0.5 py-1 md:px-3 md:py-2 font-bold lg:ml-20 xl:ml-40 hidden sm:block">Contact</a>
+            <div className="hidden sm:flex items-center mx-auto">
+              <a href="#" className="text-white text-sm md:text-base hover:bg-teal-400 rounded-lg px-1 py-1 lg:px-3 lg:py-2 font-bold md:mr-5 lg:mr-3 xl:mr-15"><GrHomeOption style={{fontSize: "30px"}}/></a>
               <div className="mx-auto">
                 <a href="#Puissance4" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Puissance 4</a>
                 <a href="#Twitter" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Twitter</a>
                 <a href="#Morpion" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Morpion</a>
                 <a href="#Cinema" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Cinema</a>
                 <a href="#Battleship" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Battleship</a>
-                <a href="#Sprite" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Sprite Generator</a>
+                <a href="#Sprite" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Sprite Generator</a>
               </div>
             </div>
-            <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 py-2 font-bold lg:mr-20 xl:mr-40 hidden sm:block"><BsDownload style={{marginLeft: "4px"}}/>CV</a>
+            <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-0.5 md:px-3 py-1 md:py-2 font-bold lg:mr-20 xl:mr-40 hidden sm:block"><BsDownload style={{marginLeft: "4px"}}/>CV</a>
           </div>
         <a href="CV_wac.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold xl:mr-14 float-right sm:hidden"><BsDownload style={{marginLeft: "4px"}}/>CV</a>
         <a onClick={() => {isMenuShow.current = false; isContactShow.current = true; setShowForm(!showForm);}} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg cursor-pointer px-3 font-bold float-right xl:ml-14 sm:hidden">Contact</a>
@@ -91,7 +90,7 @@ export default function Home() {
         </div>
         <div className={showMenu && isMenuShow.current ? "sm:hidden" : "hidden"} id="mobile-menu">
           <div className="px-2 pb-3 space-y-1">
-            <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg font-bold">Projets</a>
+            <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg font-bold">Home</a>
             <a href="#Puissance4" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Puissance 4</a>
             <a href="#Twitter" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Twitter</a>
             <a href="#Cinema" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Cinema</a>
@@ -103,7 +102,17 @@ export default function Home() {
       <section className={showForm && isContactShow.current ? "" : "hidden"}>
         <div className="relative">
           <div className="absolute">
-            <form ref={form} onSubmit={sendEmail} className="bg-teal-600 px-8 lg:px-12 xl:px-16 absolute">
+            <motion.form
+              initial={{
+                opacity: 0,
+              }}
+              whileInView={{
+                opacity: 1,
+                transition: {
+                  duration: 0.5
+                }
+              }}
+              ref={form} onSubmit={sendEmail} className="bg-teal-600 px-8 lg:px-12 xl:px-16 absolute">
               <h1 className="text-white underline font-extrabold text-lg lg:text-xl xl:text-2xl py-4 lg:py-8 xl:py-10">Contacte-moi ici</h1>
               <div className="py-2">
               <label className="text-white">Nom </label>
@@ -118,7 +127,7 @@ export default function Home() {
               <textarea rows={4} name="message" required/>
               </div>
               <input className="text-white font-bold my-6 mb-8 px-16 py-3 bg-slate-400 cursor-pointer" type="submit" value="Envoyer" />
-            </form>
+            </motion.form>
           </div>
         </div>
       </section>
@@ -135,7 +144,7 @@ export default function Home() {
                   className=" cursor-pointer text-3xl"
                 />
               </li> */}
-              <motion.li whileHover={{scale: 1.2}} whileTap={{scale: 1}} className="mt-20">
+              <motion.li whileHover={{scale: 1.2}} whileTap={{scale: 1.1}} className="mt-20">
                 <BsFillMoonStarsFill
                   style={
                     darkMode ?
