@@ -11,11 +11,12 @@ import {
 } from "react-icons/ai";
 import Navbar from "./navbar";
 import Projets from "./projets";
+import Image from 'next/legacy/image';
 
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
-  const text = "Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages. Je parle anglais j'adore le basket, j'ai des diplômes d'entraineur j'ai été barman, menuisier et professeur de sport en stage. Je suis disponible pour travailler et vous pouvez me contacter via le formulaire ou au 06 37 26 91 05".split(" ");
+  const text = "Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages. Je parle anglais j'adore le basket, j'ai des diplômes d'entraineur j'ai été barman, menuisier et professeur de sport en stage. Je suis disponible pour travailler et vous pouvez me contacter via le formulaire de contact ou au 06 37 26 91 05".split(" ");
 
   return (
     <div className={darkMode ? "dark font-quicksand" : "font-quicksand"}>
@@ -56,9 +57,9 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/maylan-gomes-12093a302/" target="_blank"><AiFillLinkedin /></a>
               <a href="https://github.com/maylangomes?tab=repositories" target="_blank"><AiFillGithub /></a>
             </div>
-            {/* <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
-            </div> */}
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+              <Image src={"https://raw.githubusercontent.com/maylangomes/Assets/main/photo_wac.jpg"} layout="fill" objectFit="cover" />
+            </div>
           </div>
         </section>
         <Projets />
