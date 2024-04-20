@@ -117,7 +117,7 @@ export default function Navbar() {
                         <label className="text-white">Message *</label>
                         <textarea rows={4} name="message" required/>
                         </div>
-                        <input className="text-white font-bold my-6 mb-8 px-16 py-3 bg-slate-400 cursor-pointer" type="submit" value="Envoyer" />
+                        <motion.input whileTap={{scale: 0.9}} className="text-white font-bold my-6 mb-8 px-16 py-3 bg-slate-400 cursor-pointer" type="submit" value="Envoyer" />
                         </motion.form>
                     </div>
                 </div>

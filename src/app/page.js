@@ -16,7 +16,7 @@ import Image from 'next/legacy/image';
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
-  const text = "Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages. Je parle anglais j'adore le basket, j'ai des diplômes d'entraineur j'ai été barman, menuisier et professeur de sport en stage. Je suis disponible pour travailler et vous pouvez me contacter via le formulaire de contact ou au 06 37 26 91 05".split(" ");
+  const text = "Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages. Je parle anglais et je suis fan de basket. J'ai été barman, menuisier, entraineur de basket et professeur de sport en stage. Je suis disponible pour travailler vous pouvez donc me contacter par email via le formulaire".split(" ");
 
   return (
     <div className={darkMode ? "dark font-quicksand" : "font-quicksand"}>
