@@ -15,7 +15,7 @@ import Projets from "./projets";
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
-  const text = "Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages.".split(" ");
+  const text = "Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages. Je parle anglais j'adore le basket, j'ai des diplômes d'entraineur j'ai été barman, menuisier et professeur de sport en stage. Je suis disponible pour travailler et vous pouvez me contacter via le formulaire ou au 06 37 26 91 05".split(" ");
 
   return (
     <div className={darkMode ? "dark font-quicksand" : "font-quicksand"}>
@@ -49,12 +49,12 @@ export default function Home() {
             </h3>
             <p className="text-lg py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-2xl mx-auto md:text-xl">
               {text.map((el, i) => (
-                <motion.span initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.25, delay: i/10,}} key={i}>{el}{" "}</motion.span>
+                <motion.span initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.1, delay: i/10,}} key={i}>{el}{" "}</motion.span>
               ))}
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillLinkedin />
-              <AiFillGithub />
+              <a href="https://www.linkedin.com/in/maylan-gomes-12093a302/" target="_blank"><AiFillLinkedin /></a>
+              <a href="https://github.com/maylangomes?tab=repositories" target="_blank"><AiFillGithub /></a>
             </div>
             {/* <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
