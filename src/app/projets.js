@@ -62,7 +62,7 @@ export default function Projets() {
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
                 <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Twitter</span><span className='text-xl'> [ 1 mois, groupe de 4 ]</span>
                 <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>Ajax, création d'une base de données et d'un ID_user, gestion de profil.</span>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>ajax, création d'une base de données et d'un ID_user, gestion de profil.</span>
             </p>
             <Image
                 className="rounded-lg object-cover"

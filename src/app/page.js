@@ -16,7 +16,7 @@ import Image from 'next/legacy/image';
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
-  const text = "Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages. Je parle anglais et je suis fan de basket. J'ai été barman, menuisier, entraineur de basket et professeur de sport en stage. Je suis disponible pour travailler vous pouvez donc me contacter par email via le formulaire".split(" ");
+  const text = "Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages et framwork : PHP - Javascript - SQL - SASS - Symfony - Laravel - React native - React.js - Next.js - jQuery - Bootstrap - Tailwind CSS.".split(" ");
 
   return (
     <div className={darkMode ? "dark font-quicksand" : "font-quicksand"}>
@@ -47,6 +47,8 @@ export default function Home() {
             </h2>
             <h3 className="text-black text-2xl py-2 dark:text-white sm:text-3xl">
               Développeur full-stack.
+              <br></br>
+              Recherche alternance septembre 2024
             </h3>
             <p className="text-lg py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-2xl mx-auto md:text-xl">
               {text.map((el, i) => (
