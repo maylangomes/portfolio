@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 export default function Projets() {
     return (
         <section className="py-10">
-            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap shadow-2xl p-10">
             <motion.div
                 whileHover={{
                 scale: 1.03
@@ -24,7 +24,7 @@ export default function Projets() {
                 viewport={{
                 once: true
                 }}
-                id="Puissance4" className="basis-1/3 flex-1 ">
+                id="Puissance4" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
                 <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Puissance 4</span><span className='text-xl'> [ 2 semaines, seul ]</span>
                 <br></br>
