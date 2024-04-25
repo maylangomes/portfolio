@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/legacy/image';
 import {motion} from "framer-motion";
+import Link from 'next/link';
 
 export default function Projets() {
     return (
@@ -30,6 +31,7 @@ export default function Projets() {
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, personnalisation des profils, animation, localstorage.</span>
             </p>
+            <Link href={"https://github.com/maylangomes/Puissance_4"} target='_blank'>
                 <Image
                 className="rounded-lg object-cover"
                 alt="puissance4"
@@ -39,6 +41,7 @@ export default function Projets() {
                 priority
                 src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance_4.png"}
                 />
+            </Link>
             </motion.div>
             <motion.div
                 whileHover={{
@@ -64,15 +67,17 @@ export default function Projets() {
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>ajax, création d'une base de données et d'un ID_user, gestion de profil.</span>
             </p>
-            <Image
-                className="rounded-lg object-cover"
-                alt="twitter"
-                width={"85"}
-                height={"100"}
-                layout="responsive"
-                priority
-                src={"https://raw.githubusercontent.com/maylangomes/Assets/main/twitter.png"}
+            <Link href={"https://github.com/maylangomes/Twitter"} target='_blank'>
+                <Image
+                    className="rounded-lg object-cover"
+                    alt="twitter"
+                    width={"85"}
+                    height={"100"}
+                    layout="responsive"
+                    priority
+                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/twitter.png"}
                 />
+            </Link>
             </motion.div>
             <motion.div
                 whileHover={{
@@ -98,15 +103,17 @@ export default function Projets() {
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>manipulation du DOM, algorithmie, gestion des événements, localstorage.</span>
             </p>
-            <Image
-                className="rounded-lg object-cover"
-                alt="morpion"
-                width={"85"}
-                height={"100"}
-                layout="responsive"
-                priority
-                src={"https://raw.githubusercontent.com/maylangomes/Assets/main/Morpion.png"}
+            <Link href={"https://github.com/maylangomes/Morpion"} target='_blank'>
+                <Image
+                    className="rounded-lg object-cover"
+                    alt="morpion"
+                    width={"85"}
+                    height={"100"}
+                    layout="responsive"
+                    priority
+                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/Morpion.png"}
                 />
+            </Link>
             </motion.div>
             <motion.div
                 whileHover={{
@@ -132,15 +139,17 @@ export default function Projets() {
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>filtres de recherche croisés, pagination, manipulation d'une base de données</span>
             </p>
-            <Image
-                className="rounded-lg object-cover"
-                alt="cinema"
-                width={"85"}
-                height={"100"}
-                layout="responsive"
-                priority
-                src={"https://raw.githubusercontent.com/maylangomes/Assets/main/cinema.png"}
+            <Link href={"https://github.com/maylangomes/Cinema"} target='_blank'>
+                <Image
+                    className="rounded-lg object-cover"
+                    alt="cinema"
+                    width={"85"}
+                    height={"100"}
+                    layout="responsive"
+                    priority
+                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/cinema.png"}
                 />
+            </Link>
             </motion.div>
             <motion.div
                 whileHover={{
@@ -166,15 +175,17 @@ export default function Projets() {
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, POO, IA.</span>
             </p>
-            <Image
-                className="rounded-lg object-cover"
-                alt="battleship"
-                width={"200"}
-                height={"100"}
-                layout="responsive"
-                priority
-                src={"https://raw.githubusercontent.com/maylangomes/Assets/main/battleship.png"}
+            <Link href={"https://github.com/maylangomes/Battleship"} target='_blank'>
+                <Image
+                    className="rounded-lg object-cover"
+                    alt="battleship"
+                    width={"200"}
+                    height={"100"}
+                    layout="responsive"
+                    priority
+                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/battleship.png"}
                 />
+            </Link>
             </motion.div>
             <motion.div
                 whileHover={{
@@ -200,15 +211,17 @@ export default function Projets() {
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, </span><span className='text-lg'>récursivité, création d'un sprite d'images avec options implémentées.</span>
             </p>
-            <Image
-                className="rounded-lg object-cover"
-                alt="sprite"
-                width={"200"}
-                height={"100"}
-                layout="responsive"
-                priority
-                src={"https://raw.githubusercontent.com/maylangomes/Assets/main/sprite.png"}
+            <Link href={"https://github.com/maylangomes/Sprite"} target='_blank'>
+                <Image
+                    className="rounded-lg object-cover"
+                    alt="sprite"
+                    width={"200"}
+                    height={"100"}
+                    layout="responsive"
+                    priority
+                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/sprite.png"}
                 />
+            </Link>
             </motion.div>
             </div>
         </section>

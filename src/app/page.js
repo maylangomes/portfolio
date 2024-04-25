@@ -52,7 +52,7 @@ export default function Home() {
             </h3>
             <p className="text-lg py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-2xl mx-auto md:text-xl">
               {text.map((el, i) => (
-                <motion.span initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.1, delay: i/10,}} key={i}>{el}{" "}</motion.span>
+                <motion.span initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.25, delay: i/10,}} key={i}>{el}{" "}</motion.span>
               ))}
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
@@ -60,7 +60,7 @@ export default function Home() {
               <a href="https://github.com/maylangomes?tab=repositories" target="_blank"><AiFillGithub /></a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={"https://raw.githubusercontent.com/maylangomes/Assets/main/photo_wac.jpg"} layout="fill" objectFit="cover" />
+              <Image src={"https://raw.githubusercontent.com/maylangomes/Assets/main/Maylan.JPG"} priority layout="fill" objectFit="cover" alt="photo_profil"/>
             </div>
           </div>
         </section>
