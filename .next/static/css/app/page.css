@@ -536,9 +536,6 @@ video {
 .mt-20 {
   margin-top: 5rem;
 }
-.ml-20 {
-  margin-left: 5rem;
-}
 .block {
   display: block;
 }
@@ -804,8 +801,10 @@ video {
   }
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 
 body {
