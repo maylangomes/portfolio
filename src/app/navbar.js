@@ -36,7 +36,7 @@ export default function Navbar() {
     return (
         <nav className="bg-teal-600 fixed w-full z-10">
             <div>
-                <div  className="flex items-center justify-between h-6 sm:h-16">
+                <div className="flex items-center justify-between sm:h-16">
                     {/* <div className="flex sm:hidden">
                     <button type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-teal-400 hover:bg-teal-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                         <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
@@ -63,7 +63,7 @@ export default function Navbar() {
                 </div>
                 <div>
                     <a href="CV.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold xl:mr-14 float-right sm:hidden"><BsDownload style={{marginLeft: "4px"}}/>CV</a>
-                    <a onClick={() => {isMenuShow.current = false; isContactShow.current = true; setShowForm(!showForm);}} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg cursor-pointer px-3 font-bold float-right xl:ml-14 sm:hidden">Contact</a>
+                    <a onClick={() => {isMenuShow.current = false; isContactShow.current = true; setShowForm(!showForm);}} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg cursor-pointer mt-3 px-3 font-bold float-right xl:ml-14 sm:hidden">Contact</a>
                 </div>
             </div>
             <div className="sm:hidden">
