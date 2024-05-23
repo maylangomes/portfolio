@@ -105,15 +105,15 @@ export default function Navbar() {
                         }}
                         ref={form} onSubmit={sendEmail} className="bg-teal-600 px-8 lg:px-12 xl:px-16 absolute">
                         <h1 className="text-white font-extrabold text-lg lg:text-xl xl:text-2xl py-4 lg:py-8 xl:py-10">Pour m'envoyer un <span className="whitespace-nowrap">email :</span></h1>
-                        <div className="py-2">
+                        <div className="py-2 text-black">
                         <label className="text-white">Nom </label>
                         <input type="text" name="user_name" />
                         </div>
-                        <div className="py-2">
+                        <div className="py-2 text-black">
                         <label className="text-white">Email *</label>
                         <input type="email" name="user_email" required />
                         </div>
-                        <div className="py-2">
+                        <div className="py-2 text-black">
                         <label className="text-white">Message *</label>
                         <textarea rows={4} name="message" required/>
                         </div>
