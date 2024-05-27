@@ -31,7 +31,7 @@ export default function Projets() {
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, personnalisation des profils, animation, localstorage.</span>
             </p>
-            <Link href={"https://github.com/maylangomes/Puissance_4"} target='_blank'>
+            <Link href={"https://maylangomes.github.io/puissance_4/"} target='_blank'>
                 <Image
                 className="rounded-lg object-cover"
                 alt="puissance4"
