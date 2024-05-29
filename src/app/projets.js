@@ -67,7 +67,7 @@ export default function Projets() {
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>ajax, création d'une base de données et d'un ID_user, gestion de profil.</span>
             </p>
-            <Link href={"https://github.com/maylangomes/Twitter"} target='_blank'>
+            <Link href={"https://github.com/maylangomes/twitter"} target='_blank'>
                 <Image
                     className="rounded-lg object-cover"
                     alt="twitter"
@@ -103,7 +103,7 @@ export default function Projets() {
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>manipulation du DOM, algorithmie, gestion des événements, localstorage.</span>
             </p>
-            <Link href={"https://github.com/maylangomes/Morpion"} target='_blank'>
+            <Link href={"https://maylangomes.github.io/morpion/"} target='_blank'>
                 <Image
                     className="rounded-lg object-cover"
                     alt="morpion"
@@ -139,7 +139,7 @@ export default function Projets() {
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>filtres de recherche croisés, pagination, manipulation d'une base de données</span>
             </p>
-            <Link href={"https://github.com/maylangomes/Cinema"} target='_blank'>
+            <Link href={"https://github.com/maylangomes/cinema"} target='_blank'>
                 <Image
                     className="rounded-lg object-cover"
                     alt="cinema"
@@ -175,7 +175,7 @@ export default function Projets() {
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, POO, IA.</span>
             </p>
-            <Link href={"https://github.com/maylangomes/Battleship"} target='_blank'>
+            <Link href={"https://github.com/maylangomes/battleship"} target='_blank'>
                 <Image
                     className="rounded-lg object-cover"
                     alt="battleship"
@@ -211,7 +211,7 @@ export default function Projets() {
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, </span><span className='text-lg'>récursivité, création d'un sprite d'images avec options implémentées.</span>
             </p>
-            <Link href={"https://github.com/maylangomes/Sprite"} target='_blank'>
+            <Link href={"https://github.com/maylangomes/sprite"} target='_blank'>
                 <Image
                     className="rounded-lg object-cover"
                     alt="sprite"
