@@ -27,9 +27,13 @@ export default function Projets() {
                 }}
                 id="Puissance4" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Puissance 4</span><span className='text-xl'> [ 2 semaines, seul ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Puissance 4</span><span className='text-xl text-nowrap'> [ 2 semaines, seul ]</span>
                 <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, personnalisation des profils, animation, localstorage.</span>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, personnalisation des profils, animation, localstorage. Possibilité de modifier la taille du puissance 4.</span>
+                <br></br>
+                <a href="https://maylangomes.github.io/puissance_4/" target='_blank'>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
+                </a>
             </p>
             <Link href={"https://maylangomes.github.io/puissance_4/"} target='_blank'>
                 <Image
@@ -63,9 +67,13 @@ export default function Projets() {
                 }}
                 id="Twitter" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Twitter</span><span className='text-xl'> [ 1 mois, groupe de 4 ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Twitter</span><span className='text-xl text-nowrap'> [ 1 mois, groupe de 4 ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>ajax, création d'une base de données et d'un ID_user, gestion de profil.</span>
+                <br></br>
+                <a href="https://github.com/maylangomes/twitter" target='_blank'>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
+                </a>
             </p>
             <Link href={"https://github.com/maylangomes/twitter"} target='_blank'>
                 <Image
@@ -99,9 +107,13 @@ export default function Projets() {
                 }}
                 id="Morpion" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Morpion</span><span className='text-xl'> [ 3h30 en examen, seul ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Morpion</span><span className='text-xl text-nowrap'> [ 3h30 en examen, seul ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>manipulation du DOM, algorithmie, gestion des événements, localstorage.</span>
+                <br></br>
+                <a href="https://maylangomes.github.io/morpion/" target='_blank'>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
+                </a>
             </p>
             <Link href={"https://maylangomes.github.io/morpion/"} target='_blank'>
                 <Image
@@ -135,9 +147,13 @@ export default function Projets() {
                 }}
                 id="Cinema" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema</span><span className='text-xl'> [ 2 semaines, seul ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema</span><span className='text-xl text-nowrap'> [ 2 semaines, seul ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>filtres de recherche croisés, pagination, manipulation d'une base de données</span>
+                <br></br>
+                <a href="https://github.com/maylangomes/cinema" target='_blank'>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
+                </a>
             </p>
             <Link href={"https://github.com/maylangomes/cinema"} target='_blank'>
                 <Image
@@ -171,9 +187,13 @@ export default function Projets() {
                 }}
                 id="Battleship" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Battleship</span><span className='text-xl'> [ 2 semaines, groupe de 2 ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Battleship</span><span className='text-xl text-nowrap'> [ 2 semaines, groupe de 2 ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, POO, IA.</span>
+                <br></br>
+                <a href="https://github.com/maylangomes/battleship" target='_blank'>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
+                </a>
             </p>
             <Link href={"https://github.com/maylangomes/battleship"} target='_blank'>
                 <Image
@@ -207,9 +227,13 @@ export default function Projets() {
                 }}
                 id="Sprite" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Sprite Generator</span><span className='text-xl'> [ 2 semaines, seul ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Sprite Generator</span><span className='text-xl text-nowrap'> [ 2 semaines, seul ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, </span><span className='text-lg'>récursivité, création d'un sprite d'images avec options implémentées.</span>
+                <br></br>
+                <a href="https://github.com/maylangomes/sprite" target='_blank'>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
+                </a>
             </p>
             <Link href={"https://github.com/maylangomes/sprite"} target='_blank'>
                 <Image
