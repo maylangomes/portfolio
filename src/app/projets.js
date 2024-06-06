@@ -2,10 +2,14 @@
 import Image from 'next/legacy/image';
 import {motion} from "framer-motion";
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+
+const VideoPlayer = dynamic(() => import('../app/video'), { ssr: false });
 
 export default function Projets() {
     return (
         <section className="py-10">
+            {/* <VideoPlayer url="/videos/sprite.mp4" /> */}
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap shadow-2xl p-10">
             <motion.div
                 whileHover={{
@@ -25,25 +29,25 @@ export default function Projets() {
                 viewport={{
                 once: true
                 }}
-                id="Puissance4" className="basis-1/3 flex-1">
+                id="BasketQuiz" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Puissance 4</span><span className='text-xl text-nowrap'> [ 2 semaines, seul ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Basket Quiz</span><span className='text-xl text-nowrap'> [ 1 semaine, seul ]</span>
                 <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, personnalisation des profils, animation, localstorage. Possibilité de modifier la taille du puissance 4.</span>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> Next.js, </span><span className='text-lg'>Design shadcn avec divers types de champs : Radio, Select Multi, Conditionnel, Dropdown, Slider.</span>
                 <br></br>
-                <a href="https://maylangomes.github.io/puissance_4/" target='_blank'>
+                <a href="https://maylangomes.github.io/quiz/" target='_blank'>
                     <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
                 </a>
             </p>
-            <Link href={"https://maylangomes.github.io/puissance_4/"} target='_blank'>
+            <Link href={"https://maylangomes.github.io/quiz/"} target='_blank'>
                 <Image
                 className="rounded-lg object-cover"
                 alt="puissance4"
-                width={"85"}
+                width={"100"}
                 height={"100"}
                 layout="responsive"
                 priority
-                src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance_4.png"}
+                src={"https://raw.githubusercontent.com/maylangomes/Img/main/quiz.png"}
                 />
             </Link>
             </motion.div>
@@ -67,23 +71,23 @@ export default function Projets() {
                 }}
                 id="Twitter" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Twitter</span><span className='text-xl text-nowrap'> [ 1 mois, groupe de 4 ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema Vintage</span><span className='text-xl text-nowrap'> [ 1 jour, seul ]</span>
                 <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>ajax, création d'une base de données et d'un ID_user, gestion de profil.</span>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> Next.js </span><span className='text-lg'>Fetch JSON, reproduction figma, structure en Atomic Design Pattern, typescript</span>
                 <br></br>
-                <a href="https://github.com/maylangomes/twitter" target='_blank'>
-                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
+                <a href="https://aquamarine-moonbeam-004d5d.netlify.app/view" target='_blank'>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
                 </a>
             </p>
-            <Link href={"https://github.com/maylangomes/twitter"} target='_blank'>
+            <Link href={"https://aquamarine-moonbeam-004d5d.netlify.app/view"} target='_blank'>
                 <Image
                     className="rounded-lg object-cover"
                     alt="twitter"
-                    width={"85"}
+                    width={"100"}
                     height={"100"}
                     layout="responsive"
                     priority
-                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/twitter.png"}
+                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/cinema-vintage.png"}
                 />
             </Link>
             </motion.div>
@@ -145,25 +149,25 @@ export default function Projets() {
                 viewport={{
                 once: true
                 }}
-                id="Cinema" className="basis-1/3 flex-1">
+                id="Puissance4" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema</span><span className='text-xl text-nowrap'> [ 2 semaines, seul ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Puissance 4 modulable</span><span className='text-xl text-nowrap'> [ 2 semaines, seul ]</span>
                 <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>filtres de recherche croisés, pagination, manipulation d'une base de données</span>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, personnalisation des profils, animation, localstorage. Possibilité de modifier la taille du puissance 4 (nombre de colonnes et lignes).</span>
                 <br></br>
-                <a href="https://github.com/maylangomes/cinema" target='_blank'>
-                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
+                <a href="https://maylangomes.github.io/puissance_4/" target='_blank'>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
                 </a>
             </p>
-            <Link href={"https://github.com/maylangomes/cinema"} target='_blank'>
+            <Link href={"https://maylangomes.github.io/puissance_4/"} target='_blank'>
                 <Image
-                    className="rounded-lg object-cover"
-                    alt="cinema"
-                    width={"85"}
-                    height={"100"}
-                    layout="responsive"
-                    priority
-                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/cinema.png"}
+                className="rounded-lg object-cover"
+                alt="puissance4"
+                width={"85"}
+                height={"100"}
+                layout="responsive"
+                priority
+                src={"https://raw.githubusercontent.com/maylangomes/Img/main/puissance_4.png"}
                 />
             </Link>
             </motion.div>
@@ -185,25 +189,25 @@ export default function Projets() {
                 viewport={{
                 once: true
                 }}
-                id="Battleship" className="basis-1/3 flex-1">
+                id="Cinema" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Battleship</span><span className='text-xl text-nowrap'> [ 2 semaines, groupe de 2 ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema Admin</span><span className='text-xl text-nowrap'> [ 2 semaines, seul ]</span>
                 <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, POO, IA.</span>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>filtres de recherche croisés, pagination</span>
                 <br></br>
-                <a href="https://github.com/maylangomes/battleship" target='_blank'>
+                <a href="https://github.com/maylangomes/cinema" target='_blank'>
                     <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
                 </a>
             </p>
-            <Link href={"https://github.com/maylangomes/battleship"} target='_blank'>
+            <Link href={"https://github.com/maylangomes/cinema"} target='_blank'>
                 <Image
                     className="rounded-lg object-cover"
-                    alt="battleship"
+                    alt="cinema"
                     width={"200"}
                     height={"100"}
                     layout="responsive"
                     priority
-                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/battleship.png"}
+                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/cinema.png"}
                 />
             </Link>
             </motion.div>
