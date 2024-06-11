@@ -153,7 +153,7 @@ export default function Projets() {
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
                 <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Puissance 4 modulable</span><span className='text-xl text-nowrap'> [ 2 semaines ]</span>
                 <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, personnalisation des profils, animation, localstorage. Possibilité de modifier la taille du puissance 4 (nombre de colonnes et lignes).</span>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, personnalisation des profils, animation, localstorage. Possibilité de modifier la taille du puissance 4 (nombre de colonnes/lignes).</span>
                 <br></br>
                 <a href="https://maylangomes.github.io/puissance_4/" target='_blank'>
                     <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
