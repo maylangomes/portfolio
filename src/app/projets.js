@@ -31,7 +31,7 @@ export default function Projets() {
                 }}
                 id="BasketQuiz" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Basket Quiz</span><span className='text-xl text-nowrap'> [ 1 semaine, seul ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Basket Quiz</span><span className='text-xl text-nowrap'> [ 1 semaine ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Next.js, </span><span className='text-lg'>Design shadcn avec divers types de champs : Radio, Select Multi, Conditionnel, Dropdown, Slider.</span>
                 <br></br>
@@ -71,7 +71,7 @@ export default function Projets() {
                 }}
                 id="Twitter" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema Vintage</span><span className='text-xl text-nowrap'> [ 1 jour, seul ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema Vintage</span><span className='text-xl text-nowrap'> [ 1 jour ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Next.js </span><span className='text-lg'>Fetch JSON, reproduction figma, structure en Atomic Design Pattern, typescript</span>
                 <br></br>
@@ -111,7 +111,7 @@ export default function Projets() {
                 }}
                 id="Morpion" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Morpion</span><span className='text-xl text-nowrap'> [ 3h30 en examen, seul ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Morpion</span><span className='text-xl text-nowrap'> [ 3h30 en examen ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>manipulation du DOM, algorithmie, gestion des événements, localstorage.</span>
                 <br></br>
@@ -151,7 +151,7 @@ export default function Projets() {
                 }}
                 id="Puissance4" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Puissance 4 modulable</span><span className='text-xl text-nowrap'> [ 2 semaines, seul ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Puissance 4 modulable</span><span className='text-xl text-nowrap'> [ 2 semaines ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, personnalisation des profils, animation, localstorage. Possibilité de modifier la taille du puissance 4 (nombre de colonnes et lignes).</span>
                 <br></br>
@@ -191,7 +191,7 @@ export default function Projets() {
                 }}
                 id="Cinema" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema Admin</span><span className='text-xl text-nowrap'> [ 2 semaines, seul ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema Admin</span><span className='text-xl text-nowrap'> [ 2 semaines ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>filtres de recherche croisés, pagination</span>
                 <br></br>
@@ -231,7 +231,7 @@ export default function Projets() {
                 }}
                 id="Sprite" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Sprite Generator</span><span className='text-xl text-nowrap'> [ 2 semaines, seul ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Sprite Generator</span><span className='text-xl text-nowrap'> [ 2 semaines ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, </span><span className='text-lg'>récursivité, création d'un sprite d'images avec options implémentées.</span>
                 <br></br>
