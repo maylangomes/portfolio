@@ -191,7 +191,7 @@ export default function Projets() {
                 }}
                 id="Cinema" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema Admin</span><span className='text-xl text-nowrap'> [ 2 semaines ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Movie Filter</span><span className='text-xl text-nowrap'> [ 2 semaines ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>filtres de recherche croisés, pagination</span>
                 <br></br>
