@@ -75,11 +75,11 @@ export default function Projets() {
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Next.js </span><span className='text-lg'>Fetch JSON, reproduction figma, structure en Atomic Design Pattern, typescript</span>
                 <br></br>
-                <a href="https://aquamarine-moonbeam-004d5d.netlify.app/view" target='_blank'>
+                <a href="https://maylangomescinema.netlify.app/view" target='_blank'>
                     <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
                 </a>
             </p>
-            <Link href={"https://aquamarine-moonbeam-004d5d.netlify.app/view"} target='_blank'>
+            <Link href={"https://maylangomescinema.netlify.app/view"} target='_blank'>
                 <Image
                     className="rounded-lg object-cover"
                     alt="twitter"
