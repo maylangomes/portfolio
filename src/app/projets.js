@@ -73,7 +73,7 @@ export default function Projets() {
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
                 <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema Vintage</span><span className='text-xl text-nowrap'> [ 1 jour ]</span>
                 <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> Next.js </span><span className='text-lg'>Fetch JSON, reproduction figma, structure en Atomic Design Pattern, typescript</span>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> Next.js </span><span className='text-lg'>, typescript, Fetch JSON, reproduction figma, structure en Atomic Design Pattern</span>
                 <br></br>
                 <a href="https://maylangomescinema.netlify.app/view" target='_blank'>
                     <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
@@ -137,6 +137,46 @@ export default function Projets() {
                 }}
                 initial={{
                 opacity: 0,
+                x: -200
+                }}
+                whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                    duration: 1
+                }
+                }}
+                viewport={{
+                once: true
+                }}
+                id="Cinema" className="basis-1/3 flex-1">
+            <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Dashboard</span><span className='text-xl text-nowrap'> [ 2 semaines ]</span>
+                <br></br>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> Python, </span><span className='text-lg'>streamlit, pandas, filtres croisés, exploitation d'un csv dans des graphiques.</span>
+                <br></br>
+                <a href="https://maylangomes.streamlit.app" target='_blank'>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
+                </a>
+            </p>
+            <Link href={"https://maylangomes.streamlit.app"} target='_blank'>
+                <Image
+                    className="rounded-lg object-cover"
+                    alt="cinema"
+                    width={"85"}
+                    height={"100"}
+                    layout="responsive"
+                    priority
+                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/dashboard.png"}
+                />
+            </Link>
+            </motion.div>
+            <motion.div
+                whileHover={{
+                scale: 1.03
+                }}
+                initial={{
+                opacity: 0,
                 x: 200
                 }}
                 whileInView={{
@@ -171,46 +211,7 @@ export default function Projets() {
                 />
             </Link>
             </motion.div>
-            <motion.div
-                whileHover={{
-                scale: 1.03
-                }}
-                initial={{
-                opacity: 0,
-                x: -200
-                }}
-                whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                    duration: 1
-                }
-                }}
-                viewport={{
-                once: true
-                }}
-                id="Cinema" className="basis-1/3 flex-1">
-            <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Movie Filter</span><span className='text-xl text-nowrap'> [ 2 semaines ]</span>
-                <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>filtres de recherche croisés, pagination</span>
-                <br></br>
-                <a href="https://github.com/maylangomes/cinema" target='_blank'>
-                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
-                </a>
-            </p>
-            <Link href={"https://github.com/maylangomes/cinema"} target='_blank'>
-                <Image
-                    className="rounded-lg object-cover"
-                    alt="cinema"
-                    width={"200"}
-                    height={"100"}
-                    layout="responsive"
-                    priority
-                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/cinema.png"}
-                />
-            </Link>
-            </motion.div>
+            
             <motion.div
                 whileHover={{
                 scale: 1.03
