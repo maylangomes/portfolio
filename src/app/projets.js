@@ -156,7 +156,7 @@ export default function Projets() {
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Python, </span><span className='text-lg'>streamlit, pandas, filtres croisés, graphiques à partir d'un csv.</span>
                 <br></br>
                 <a href="https://maylangomes.streamlit.app" target='_blank'>
-                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
                 </a>
             </p>
             <Link href={"https://maylangomes.streamlit.app"} target='_blank'>
