@@ -149,11 +149,11 @@ export default function Projets() {
                 viewport={{
                 once: true
                 }}
-                id="Cinema" className="basis-1/3 flex-1">
+                id="Dashboard" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
                 <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Dashboard</span><span className='text-xl text-nowrap'> [ 2 semaines ]</span>
                 <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> Python, </span><span className='text-lg'>streamlit, pandas, filtres croisés, exploitation d'un csv dans des graphiques.</span>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> Python, </span><span className='text-lg'>streamlit, pandas, filtres croisés, graphiques à partir d'un csv.</span>
                 <br></br>
                 <a href="https://maylangomes.streamlit.app" target='_blank'>
                     <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
