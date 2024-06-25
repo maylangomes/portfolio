@@ -203,7 +203,7 @@ export default function Projets() {
                 <Image
                 className="rounded-lg object-cover"
                 alt="puissance4"
-                width={"85"}
+                width={"200"}
                 height={"100"}
                 layout="responsive"
                 priority
@@ -234,7 +234,7 @@ export default function Projets() {
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
                 <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Sprite Generator</span><span className='text-xl text-nowrap'> [ 2 semaines ]</span>
                 <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, </span><span className='text-lg'>récursivité, création d'un sprite d'images avec options implémentées.</span>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, </span><span className='text-lg'>récursivité, création d'un sprite d'images avec options implémentées (taille, nom du fichier créé, récursif), création d'un fichier CSS simultanément.</span>
                 <br></br>
                 <a href="https://github.com/maylangomes/sprite" target='_blank'>
                     <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
