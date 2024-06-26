@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         glametrix: "glametrix",
         quicksand: "quicksand",
+        montserrat: "montserrat",
       },
     },
   },

@@ -48,6 +48,11 @@ body {
   src: url("/Glametrix-oj9A.otf");
 }
 
+@font-face {
+  font-family: "montserrat";
+  src: url("/Montserrat-VariableFont_wght.ttf");
+}
+
 /* .quicksand {
   font-family: "quicksand";
 } */

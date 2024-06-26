@@ -720,6 +720,9 @@ video {
 .font-quicksand {
   font-family: quicksand;
 }
+.font-montserrat {
+  font-family: montserrat;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -834,6 +837,11 @@ body {
 @font-face {
   font-family: "glametrix";
   src: url("/Glametrix-oj9A.otf");
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("/Montserrat-VariableFont_wght.ttf");
 }
 
 /* .quicksand {

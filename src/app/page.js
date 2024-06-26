@@ -19,7 +19,7 @@ export default function Home() {
   const text = "Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages et framwork : PHP - Javascript - Python - Java - Typescript - MySQL - PostgreSQL - SASS - Symfony - Laravel - React native - React.js - Next.js - jQuery - Supabase - Django - Flask - Spring - Bootstrap - Tailwind CSS.".split(" ");
 
   return (
-    <div className={darkMode ? "dark font-quicksand" : "font-quicksand"}>
+    <div className={darkMode ? "dark font-montserrat" : "font-montserrat"}>
       <title>Portfolio</title>
       <Navbar/>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
