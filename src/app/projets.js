@@ -3,6 +3,8 @@ import Image from 'next/legacy/image';
 import {motion} from "framer-motion";
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import React from 'react';
+import ReactPlayer from 'react-player';
 
 const VideoPlayer = dynamic(() => import('../app/video'), { ssr: false });
 
@@ -241,16 +243,11 @@ export default function Projets() {
                 </a>
             </p>
             <Link href={"https://github.com/maylangomes/sprite"} target='_blank'>
-                <Image
-                    className="rounded-lg object-cover"
-                    alt="sprite"
-                    width={"200"}
-                    height={"100"}
-                    layout="responsive"
-                    priority
-                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/sprite.png"}
-                />
             </Link>
+            <video height="452" width="768" controls>
+          <source src="/sprite.mp4" />
+          Your browser does not support the video tag...
+        </video>
             </motion.div>
             </div>
         </section>
