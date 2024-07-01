@@ -33,9 +33,9 @@ export default function Projets() {
                 }}
                 id="BasketQuiz" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Basket Quiz</span><span className='text-xl text-nowrap'> [ 1 semaine ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Basket Quiz</span><span className='text-xl text-nowrap'> [ 1 semaine, projet personnel ]</span>
                 <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> Next.js, </span><span className='text-lg'>Design shadcn avec divers types de champs : Radio, <strong>Select Multi</strong>, Conditionnel, Dropdown, <strong>Slider</strong>.</span>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> Next.js, </span><span className='text-lg'>possibilité de <strong>créer ses propres questions</strong>. Design shadcn avec divers types de champs : <strong>Select Multi</strong>, Conditionnel, Dropdown, <strong>Slider</strong>..</span>
                 <br></br>
                 <a href="https://maylangomes.github.io/quiz/" target='_blank'>
                     <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
@@ -59,7 +59,7 @@ export default function Projets() {
                 }}
                 initial={{
                 opacity: 0,
-                x: 200
+                x: -200
                 }}
                 whileInView={{
                 opacity: 1,
@@ -71,25 +71,25 @@ export default function Projets() {
                 viewport={{
                 once: true
                 }}
-                id="Twitter" className="basis-1/3 flex-1">
+                id="Dashboard" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema Vintage</span><span className='text-xl text-nowrap'> [ 1 jour ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Dashboard</span><span className='text-xl text-nowrap'> [ 2 semaines, projet personnel ]</span>
                 <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> Next.js </span><span className='text-lg'>, typescript, Fetch JSON, <strong>reproduction figma</strong>, structure en Atomic Design Pattern</span>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> Python, </span><span className='text-lg'><strong>streamlit</strong>, pandas, <strong>filtres croisés</strong>, graphiques à partir d'un csv.</span>
                 <br></br>
-                <a href="https://maylangomescinema.netlify.app/view" target='_blank'>
+                <a href="https://maylangomes.streamlit.app" target='_blank'>
                     <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
                 </a>
             </p>
-            <Link href={"https://maylangomescinema.netlify.app/view"} target='_blank'>
+            <Link href={"https://maylangomes.streamlit.app"} target='_blank'>
                 <Image
                     className="rounded-lg object-cover"
-                    alt="twitter"
+                    alt="cinema"
                     width={"100"}
                     height={"100"}
                     layout="responsive"
                     priority
-                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/cinema-vintage.png"}
+                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/dashboard.png"}
                 />
             </Link>
             </motion.div>
@@ -113,7 +113,7 @@ export default function Projets() {
                 }}
                 id="Morpion" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Morpion</span><span className='text-xl text-nowrap'> [ 3h30 en examen ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Morpion</span><span className='text-xl text-nowrap'> [ 3h30 en examen, 19/20 ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'><strong>manipulation du DOM</strong>, algorithmie, gestion des événements, localstorage.</span>
                 <br></br>
@@ -139,7 +139,7 @@ export default function Projets() {
                 }}
                 initial={{
                 opacity: 0,
-                x: -200
+                x: 200
                 }}
                 whileInView={{
                 opacity: 1,
@@ -151,25 +151,60 @@ export default function Projets() {
                 viewport={{
                 once: true
                 }}
-                id="Dashboard" className="basis-1/3 flex-1">
+                id="Flappy" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Dashboard</span><span className='text-xl text-nowrap'> [ 2 semaines ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Flappy Turtle</span><span className='text-xl text-nowrap'> [ 1 semaine, projet personnel ]</span>
                 <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> Python, </span><span className='text-lg'><strong>streamlit</strong>, pandas, <strong>filtres croisés</strong>, graphiques à partir d'un csv.</span>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> Java, </span><span className='text-lg'> algorithmie, <strong>gestion d'une loop</strong>, gestion de la position dans un jeu, implémentation de score.</span>
                 <br></br>
-                <a href="https://maylangomes.streamlit.app" target='_blank'>
+                <a href="https://github.com/maylangomes/flappyturtle" target='_blank'>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
+                </a>
+            </p>
+            <Link href={"https://github.com/maylangomes/flappyturtle"} target='_blank'>
+            </Link>
+            <video height="452" width="768" controls>
+                <source src="/flappyturtle.mp4" />
+                Your browser does not support the video tag...
+            </video>
+            </motion.div>
+            <motion.div
+                whileHover={{
+                scale: 1.03
+                }}
+                initial={{
+                opacity: 0,
+                x: 200
+                }}
+                whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                    duration: 1
+                }
+                }}
+                viewport={{
+                once: true
+                }}
+                id="Twitter" className="basis-1/3 flex-1">
+            <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema Vintage</span><span className='text-xl text-nowrap'> [ 1 jour, projet personnel ]</span>
+                <br></br>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> Next.js </span><span className='text-lg'>, typescript, Fetch JSON, <strong>reproduction figma</strong>, structure en Atomic Design Pattern</span>
+                <br></br>
+                <a href="https://maylangomescinema.netlify.app/view" target='_blank'>
                     <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
                 </a>
             </p>
-            <Link href={"https://maylangomes.streamlit.app"} target='_blank'>
+            <Link href={"https://maylangomescinema.netlify.app/view"} target='_blank'>
                 <Image
                     className="rounded-lg object-cover"
-                    alt="cinema"
-                    width={"85"}
+                    alt="twitter"
+                    width={"100"}
                     height={"100"}
                     layout="responsive"
                     priority
-                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/dashboard.png"}
+                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/cinema-vintage.png"}
                 />
             </Link>
             </motion.div>
@@ -193,7 +228,7 @@ export default function Projets() {
                 }}
                 id="Puissance4" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Puissance 4 modulable</span><span className='text-xl text-nowrap'> [ 2 semaines ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Puissance 4 modulable</span><span className='text-xl text-nowrap'> [ 2 semaines, 20/20 ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, personnalisation des profils, <strong>animation</strong>, localstorage. Possibilité de <strong>modifier</strong> la taille du puissance 4 (nombre de colonnes/lignes).</span>
                 <br></br>
@@ -205,7 +240,7 @@ export default function Projets() {
                 <Image
                 className="rounded-lg object-cover"
                 alt="puissance4"
-                width={"200"}
+                width={"85"}
                 height={"100"}
                 layout="responsive"
                 priority
@@ -213,7 +248,6 @@ export default function Projets() {
                 />
             </Link>
             </motion.div>
-            
             <motion.div
                 whileHover={{
                 scale: 1.03
@@ -234,7 +268,7 @@ export default function Projets() {
                 }}
                 id="Sprite" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Sprite Generator</span><span className='text-xl text-nowrap'> [ 2 semaines ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Sprite Generator</span><span className='text-xl text-nowrap'> [ 2 semaines, 20/20 ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, </span><span className='text-lg'><strong>récursivité</strong>, création d'un sprite d'images avec options implémentées (taille, nom du fichier créé, récursif), création d'un fichier CSS simultanément.</span>
                 <br></br>
@@ -245,9 +279,49 @@ export default function Projets() {
             <Link href={"https://github.com/maylangomes/sprite"} target='_blank'>
             </Link>
             <video height="452" width="768" controls>
-          <source src="/sprite.mp4" />
-          Your browser does not support the video tag...
-        </video>
+                <source src="/sprite.mp4" />
+                Your browser does not support the video tag...
+            </video>
+            </motion.div>
+            <motion.div
+                whileHover={{
+                scale: 1.03
+                }}
+                initial={{
+                opacity: 0,
+                x: -200
+                }}
+                whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                    duration: 1
+                }
+                }}
+                viewport={{
+                once: true
+                }}
+                id="Cinema" className="basis-1/3 flex-1">
+            <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Movie Filter</span><span className='text-xl text-nowrap'> [ 2 semaines, 20/20 ]</span>
+                <br></br>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>filtres de recherche croisés, pagination</span>
+                <br></br>
+                <a href="https://github.com/maylangomes/cinema" target='_blank'>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
+                </a>
+            </p>
+            <Link href={"https://github.com/maylangomes/cinema"} target='_blank'>
+                <Image
+                    className="rounded-lg object-cover"
+                    alt="cinema"
+                    width={"200"}
+                    height={"100"}
+                    layout="responsive"
+                    priority
+                    src={"https://raw.githubusercontent.com/maylangomes/Assets/main/cinema.png"}
+                />
+            </Link>
             </motion.div>
             </div>
         </section>
