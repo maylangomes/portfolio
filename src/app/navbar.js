@@ -52,13 +52,13 @@ export default function Navbar() {
                     <a href="#" className="text-white text-sm md:text-base hover:bg-teal-400 rounded-lg px-1 py-1 lg:px-3 lg:py-2 font-bold md:mr-5 lg:mr-3 xl:mr-15"><RiHome2Line style={{fontSize: "30px"}}/></a>
                     <div className="mx-auto">
                         <a href="#BasketQuiz" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Quiz</a>
-                        <a href="#Morpion" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Dashboard</a>
-                        <a href="#BasketQuiz" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Morpion</a>
+                        <a href="#BasketQuiz" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Dashboard</a>
+                        <a href="#Morpion" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Morpion</a>
                         <a href="#Morpion" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Flappy</a>
                         <a href="#Vintage" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Cinema</a>
                         <a href="#Vintage" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Puissance 4</a>
-                        <a href="#Vintage" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Sprite</a>
-                        <a href="#Vintage" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Filter</a>
+                        <a href="#Sprite" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Sprite</a>
+                        <a href="#Sprite" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Filter</a>
                     </div>
                     </div>
                     <a href="CV_Maylan_Gomes.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-0.5 md:px-3 font-bold lg:mr-20 xl:mr-40 hidden md:block"><BsDownload style={{marginLeft: "4px"}}/>CV</a>
@@ -84,12 +84,14 @@ export default function Navbar() {
                 }}
                 className="px-2 pb-3 space-y-1">
                     <a href="#" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg font-bold">Home</a>
-                    <a href="#BasketQuiz" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Basket Quiz 4</a>
-                    <a href="#BasketQuiz" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Cinema</a>
+                    <a href="#BasketQuiz" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Basket Quiz</a>
+                    <a href="#BasketQuiz" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Dashboard</a>
                     <a href="#Morpion" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Morpion</a>
-                    <a href="#Morpion" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Dashboard</a>
+                    <a href="#Morpion" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Flappy Turtle</a>
+                    <a href="#Vintage" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Cinema Vintage</a>
                     <a href="#Vintage" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Puissance 4</a>
-                    <a href="#Vintage" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Sprite</a>
+                    <a href="#Sprite" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Sprite</a>
+                    <a href="#Sprite" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Movie Filter</a>
                 </motion.div>
             </div>
             <section className={showForm && isContactShow.current ? "" : "hidden"}>
