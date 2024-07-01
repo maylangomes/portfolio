@@ -59,7 +59,7 @@ export default function Projets() {
                 }}
                 initial={{
                 opacity: 0,
-                x: -200
+                x: 200
                 }}
                 whileInView={{
                 opacity: 1,
@@ -174,7 +174,7 @@ export default function Projets() {
                 }}
                 initial={{
                 opacity: 0,
-                x: 200
+                x: -200
                 }}
                 whileInView={{
                 opacity: 1,
@@ -186,7 +186,7 @@ export default function Projets() {
                 viewport={{
                 once: true
                 }}
-                id="Twitter" className="basis-1/3 flex-1">
+                id="Vintage" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
                 <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema Vintage</span><span className='text-xl text-nowrap'> [ 1 jour, projet personnel ]</span>
                 <br></br>
@@ -199,7 +199,7 @@ export default function Projets() {
             <Link href={"https://maylangomescinema.netlify.app/view"} target='_blank'>
                 <Image
                     className="rounded-lg object-cover"
-                    alt="twitter"
+                    alt="vintage"
                     width={"100"}
                     height={"100"}
                     layout="responsive"
@@ -254,7 +254,7 @@ export default function Projets() {
                 }}
                 initial={{
                 opacity: 0,
-                x: 200
+                x: -200
                 }}
                 whileInView={{
                 opacity: 1,
@@ -289,7 +289,7 @@ export default function Projets() {
                 }}
                 initial={{
                 opacity: 0,
-                x: -200
+                x: 200
                 }}
                 whileInView={{
                 opacity: 1,
@@ -305,7 +305,7 @@ export default function Projets() {
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
                 <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Movie Filter</span><span className='text-xl text-nowrap'> [ 2 semaines, 20/20 ]</span>
                 <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>filtres de recherche croisés, pagination</span>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>filtres de recherche croisés, <strong>pagination</strong></span>
                 <br></br>
                 <a href="https://github.com/maylangomes/cinema" target='_blank'>
                     <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>

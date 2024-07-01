@@ -26,7 +26,7 @@ export default function Home() {
         {/* <section className="min-h-screen"> */}
         <section>
           <div className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 id="welcome" className="text-black dark:text-white font-glametrix italic text-3xl mt-20">Bienvenue sur mon <span className="whitespace-nowrap">portfolio !</span></h1>
+            <h1 id="welcome" className="text-black dark:text-white font-glametrix italic text-4xl mt-20">Bienvenue sur mon <span className="whitespace-nowrap">portfolio !</span></h1>
             <ul className="flex">
               <motion.li whileHover={{scale: 1.2}} whileTap={{scale: 1.1}} className="mt-20">
                 <BsFillMoonStarsFill

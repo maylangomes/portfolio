@@ -36,7 +36,7 @@ export default function Navbar() {
     return (
         <nav className="bg-teal-600 fixed w-full z-10">
             <div>
-                <div className="flex items-center justify-between sm:h-16">
+                <div className="flex items-center justify-between md:h-16">
                     {/* <div className="flex sm:hidden">
                     <button type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-teal-400 hover:bg-teal-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                         <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
@@ -47,29 +47,31 @@ export default function Navbar() {
                         </svg>
                     </button>
                     </div> */}
-                    <a onClick={() => setShowForm(!showForm)} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg cursor-pointer px-0.5 py-1 md:px-3 md:py-2 font-bold lg:ml-20 xl:ml-40 hidden sm:block">Contact</a>
-                    <div className="hidden sm:flex items-center mx-auto">
+                    <a onClick={() => setShowForm(!showForm)} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg cursor-pointer px-0.5 py-1 md:px-3 md:py-2 font-bold lg:ml-20 xl:ml-40 hidden md:block">Contact</a>
+                    <div className="hidden md:flex items-center mx-auto">
                     <a href="#" className="text-white text-sm md:text-base hover:bg-teal-400 rounded-lg px-1 py-1 lg:px-3 lg:py-2 font-bold md:mr-5 lg:mr-3 xl:mr-15"><RiHome2Line style={{fontSize: "30px"}}/></a>
                     <div className="mx-auto">
-                        <a href="#BasketQuiz" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Basket Quiz</a>
-                        <a href="#BasketQuiz" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Cinema</a>
-                        <a href="#Morpion" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Morpion</a>
+                        <a href="#BasketQuiz" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Quiz</a>
                         <a href="#Morpion" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Dashboard</a>
-                        <a href="#Puissance4" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Puissance 4</a>
-                        <a href="#Puissance4" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Sprite</a>
+                        <a href="#BasketQuiz" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Morpion</a>
+                        <a href="#Morpion" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Flappy</a>
+                        <a href="#Vintage" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Cinema</a>
+                        <a href="#Vintage" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Puissance 4</a>
+                        <a href="#Vintage" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2">Sprite</a>
+                        <a href="#Vintage" className="text-white text-sm md:text-base hover:bg-teal-500 rounded-lg px-1 py-1 lg:px-3 lg:py-2 whitespace-nowrap">Filter</a>
                     </div>
                     </div>
-                    <a href="CV_Maylan_Gomes.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-0.5 md:px-3 font-bold lg:mr-20 xl:mr-40 hidden sm:block"><BsDownload style={{marginLeft: "4px"}}/>CV</a>
+                    <a href="CV_Maylan_Gomes.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-0.5 md:px-3 font-bold lg:mr-20 xl:mr-40 hidden md:block"><BsDownload style={{marginLeft: "4px"}}/>CV</a>
                 </div>
                 <div>
-                    <a href="CV_Maylan_Gomes.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold xl:mr-14 float-right sm:hidden"><BsDownload style={{marginLeft: "4px"}}/>CV</a>
-                    <a onClick={() => {isMenuShow.current = false; isContactShow.current = true; setShowForm(!showForm);}} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg cursor-pointer mt-3 px-3 font-bold float-right xl:ml-14 sm:hidden">Contact</a>
+                    <a href="CV_Maylan_Gomes.pdf" download className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg px-3 font-bold xl:mr-14 float-right md:hidden"><BsDownload style={{marginLeft: "4px"}}/>CV</a>
+                    <a onClick={() => {isMenuShow.current = false; isContactShow.current = true; setShowForm(!showForm);}} className="text-white text-lg md:text-xl hover:bg-teal-400 rounded-lg cursor-pointer mt-3 px-3 font-bold float-right xl:ml-14 md:hidden">Contact</a>
                 </div>
             </div>
-            <div className="sm:hidden">
+            <div className="md:hidden">
                 <GiHamburgerMenu onClick={() => {isMenuShow.current = true; isContactShow.current = false; setShowMenu(!showMenu);}} style={{color: "white", height: "3em", width: "3em", cursor: "pointer"}}/>
             </div>
-            <div className={showMenu && isMenuShow.current ? "sm:hidden" : "hidden"} id="mobile-menu">
+            <div className={showMenu && isMenuShow.current ? "md:hidden" : "hidden"} id="mobile-menu">
                 <motion.div
                 initial={{
                     opacity: 0,
@@ -86,8 +88,8 @@ export default function Navbar() {
                     <a href="#BasketQuiz" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Cinema</a>
                     <a href="#Morpion" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Morpion</a>
                     <a href="#Morpion" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Dashboard</a>
-                    <a href="#Puissance4" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Puissance 4</a>
-                    <a href="#Puissance4" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Sprite</a>
+                    <a href="#Vintage" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Puissance 4</a>
+                    <a href="#Vintage" onClick={() => setShowMenu(!showMenu)} className="text-white hover:bg-teal-700 block px-3 py-2 rounded-lg">Sprite</a>
                 </motion.div>
             </div>
             <section className={showForm && isContactShow.current ? "" : "hidden"}>
