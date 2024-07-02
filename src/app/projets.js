@@ -38,7 +38,7 @@ export default function Projets() {
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Next.js, </span><span className='text-lg'>possibilité de <strong>créer ses propres questions</strong>. Design shadcn avec divers types de champs : <strong>Select Multi</strong>, Conditionnel, Dropdown, <strong>Slider</strong>..</span>
                 <br></br>
                 <a href="https://maylangomes.github.io/quiz/" target='_blank'>
-                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Visiter le site en ligne</span>
                 </a>
             </p>
             <Link href={"https://maylangomes.github.io/quiz/"} target='_blank'>
@@ -78,7 +78,7 @@ export default function Projets() {
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Python, </span><span className='text-lg'><strong>streamlit</strong>, pandas, <strong>filtres croisés</strong>, graphiques à partir d'un csv.</span>
                 <br></br>
                 <a href="https://maylangomes.streamlit.app" target='_blank'>
-                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Visiter le site en ligne</span>
                 </a>
             </p>
             <Link href={"https://maylangomes.streamlit.app"} target='_blank'>
@@ -118,7 +118,7 @@ export default function Projets() {
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'><strong>manipulation du DOM</strong>, algorithmie, gestion des événements, localstorage.</span>
                 <br></br>
                 <a href="https://maylangomes.github.io/morpion/" target='_blank'>
-                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Visiter le site en ligne</span>
                 </a>
             </p>
             <Link href={"https://maylangomes.github.io/morpion/"} target='_blank'>
@@ -155,10 +155,10 @@ export default function Projets() {
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
                 <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Flappy Turtle</span><span className='text-xl text-nowrap'> [ 1 semaine, projet personnel ]</span>
                 <br></br>
-                <span className="text-teal-600 dark:text-teal-400 text-lg"> Java, </span><span className='text-lg'> algorithmie, <strong>gestion d'une loop</strong>, gestion de la position dans un jeu, implémentation de score.</span>
+                <span className="text-teal-600 dark:text-teal-400 text-lg"> Java, </span><span className='text-lg'> algorithmie, <strong>gestion d'une loop</strong>, gestion de la position dans un jeu, implémentation de score en temps réel.</span>
                 <br></br>
                 <a href="https://github.com/maylangomes/flappyturtle" target='_blank'>
-                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Visiter le github</span>
                 </a>
             </p>
             <Link href={"https://github.com/maylangomes/flappyturtle"} target='_blank'>
@@ -193,7 +193,7 @@ export default function Projets() {
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Next.js </span><span className='text-lg'>, typescript, Fetch JSON, <strong>reproduction figma</strong>, structure en Atomic Design Pattern</span>
                 <br></br>
                 <a href="https://maylangomescinema.netlify.app/view" target='_blank'>
-                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Visiter le site en ligne</span>
                 </a>
             </p>
             <Link href={"https://maylangomescinema.netlify.app/view"} target='_blank'>
@@ -233,7 +233,7 @@ export default function Projets() {
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, personnalisation des profils, <strong>animation</strong>, localstorage. Possibilité de <strong>modifier</strong> la taille du puissance 4 (nombre de colonnes/lignes).</span>
                 <br></br>
                 <a href="https://maylangomes.github.io/puissance_4/" target='_blank'>
-                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le site en ligne</span>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Visiter le site en ligne</span>
                 </a>
             </p>
             <Link href={"https://maylangomes.github.io/puissance_4/"} target='_blank'>
@@ -273,7 +273,7 @@ export default function Projets() {
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, </span><span className='text-lg'><strong>récursivité</strong>, création d'un sprite d'images avec options implémentées (taille, nom du fichier créé, récursif), création d'un fichier CSS simultanément.</span>
                 <br></br>
                 <a href="https://github.com/maylangomes/sprite" target='_blank'>
-                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Visiter le github</span>
                 </a>
             </p>
             <Link href={"https://github.com/maylangomes/sprite"} target='_blank'>
@@ -308,7 +308,7 @@ export default function Projets() {
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>filtres de recherche croisés, <strong>pagination</strong></span>
                 <br></br>
                 <a href="https://github.com/maylangomes/cinema" target='_blank'>
-                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Cliquez pour visiter le github</span>
+                    <span className='text-xl italic text-teal-600 dark:text-teal-400 font-bold underline'>Visiter le github</span>
                 </a>
             </p>
             <Link href={"https://github.com/maylangomes/cinema"} target='_blank'>
