@@ -164,7 +164,7 @@ export default function Projets() {
             <Link href={"https://github.com/maylangomes/flappyturtle"} target='_blank'>
             </Link>
             <video height="452" width="768" controls>
-                <source src="/flappyturtle.mp4" />
+                <source src={"https://raw.githubusercontent.com/maylangomes/Assets/main/flappyturtle.mp4"} />
                 Your browser does not support the video tag...
             </video>
             </motion.div>
@@ -279,7 +279,7 @@ export default function Projets() {
             <Link href={"https://github.com/maylangomes/sprite"} target='_blank'>
             </Link>
             <video height="452" width="768" controls>
-                <source src="/sprite.mp4" />
+                <source src={"https://raw.githubusercontent.com/maylangomes/Assets/main/sprite.mp4"} />
                 Your browser does not support the video tag...
             </video>
             </motion.div>

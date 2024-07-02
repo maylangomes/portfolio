@@ -916,20 +916,8 @@ body {
 
 @media (min-width: 640px) {
 
-  .sm\:block {
-    display: block;
-  }
-
-  .sm\:flex {
-    display: flex;
-  }
-
   .sm\:hidden {
     display: none;
-  }
-
-  .sm\:h-16 {
-    height: 4rem;
   }
 
   .sm\:text-3xl {
@@ -956,12 +944,12 @@ body {
     display: none;
   }
 
-  .md\:h-96 {
-    height: 24rem;
-  }
-
   .md\:h-16 {
     height: 4rem;
+  }
+
+  .md\:h-96 {
+    height: 24rem;
   }
 
   .md\:w-96 {
