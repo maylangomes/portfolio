@@ -46,9 +46,7 @@ export default function Home() {
               Maylan Gomes
             </h2>
             <h3 className="text-black text-2xl py-2 dark:text-white sm:text-3xl">
-              Développeur Web Full Stack.
-              <br></br>
-              Recherche alternance septembre 2024.
+              Développeur Web Full Stack
             </h3>
             <p className="text-lg py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-2xl mx-auto md:text-xl">
               {text.map((el, i) => (
