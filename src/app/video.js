@@ -1,6 +1,6 @@
 // components/VideoPlayer.js
-import React, { useEffect, useState } from 'react';
-import ReactPlayer from 'react-player';
+import React, { useEffect, useState } from "react";
+import ReactPlayer from "react-player";
 
 const VideoPlayer = ({ url }) => {
   const [isMounted, setIsMounted] = useState(false);
@@ -14,7 +14,7 @@ const VideoPlayer = ({ url }) => {
   }
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
+    <div style={{ display: "flex", justifyContent: "center" }}>
       <ReactPlayer url={url} controls={true} width="100%" height="100%" />
     </div>
   );
