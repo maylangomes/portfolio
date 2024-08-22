@@ -33,7 +33,7 @@ export default function Projets() {
                 }}
                 id="BasketQuiz" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Basket Quiz</span><span className='text-xl text-nowrap'> [ 1 semaine, projet personnel ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Basket Quiz</span><span className='text-xl'> [ 1 semaine, projet personnel ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Next.js, </span><span className='text-lg'>possibilité de <strong>créer ses propres questions</strong>. Design shadcn avec divers types de champs : <strong>Select Multi</strong>, Conditionnel, Dropdown, <strong>Slider</strong>..</span>
                 <br></br>
@@ -73,7 +73,7 @@ export default function Projets() {
                 }}
                 id="Dashboard" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Dashboard</span><span className='text-xl text-nowrap'> [ 2 semaines, projet personnel ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Dashboard</span><span className='text-xl'> [ 2 semaines, projet personnel ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Python, </span><span className='text-lg'><strong>streamlit</strong>, pandas, <strong>filtres croisés</strong>, graphiques à partir d'un csv.</span>
                 <br></br>
@@ -113,7 +113,7 @@ export default function Projets() {
                 }}
                 id="Morpion" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Morpion</span><span className='text-xl text-nowrap'> [ 3h30 en examen, 19/20 ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Morpion</span><span className='text-xl'> [ 3h30 en examen, 19/20 ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'><strong>manipulation du DOM</strong>, algorithmie, gestion des événements, localstorage.</span>
                 <br></br>
@@ -153,7 +153,7 @@ export default function Projets() {
                 }}
                 id="Flappy" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Flappy Turtle</span><span className='text-xl text-nowrap'> [ 1 semaine, projet personnel ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Flappy Turtle</span><span className='text-xl'> [ 1 semaine, projet personnel ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Java, </span><span className='text-lg'> algorithmie, <strong>gestion d'une loop</strong>, gestion de la position dans un jeu, implémentation de score en temps réel.</span>
                 <br></br>
@@ -188,7 +188,7 @@ export default function Projets() {
                 }}
                 id="Vintage" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema Vintage</span><span className='text-xl text-nowrap'> [ 1 jour, projet personnel ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Cinema Vintage</span><span className='text-xl'> [ 1 jour, projet personnel ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Next.js </span><span className='text-lg'>, typescript, Fetch JSON, <strong>reproduction figma</strong>, structure en Atomic Design Pattern</span>
                 <br></br>
@@ -228,7 +228,7 @@ export default function Projets() {
                 }}
                 id="Puissance4" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Puissance 4 modulable</span><span className='text-xl text-nowrap'> [ 2 semaines, 20/20 ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Puissance 4 modulable</span><span className='text-xl'> [ 2 semaines, 20/20 ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> Javascript, </span><span className='text-lg'>algorithmie, personnalisation des profils, <strong>animation</strong>, localstorage. Possibilité de <strong>modifier</strong> la taille du puissance 4 (nombre de colonnes/lignes).</span>
                 <br></br>
@@ -268,7 +268,7 @@ export default function Projets() {
                 }}
                 id="Sprite" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Sprite Generator</span><span className='text-xl text-nowrap'> [ 2 semaines, 20/20 ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Sprite Generator</span><span className='text-xl'> [ 2 semaines, 20/20 ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, </span><span className='text-lg'><strong>récursivité</strong>, création d'un sprite d'images avec options implémentées (taille, nom du fichier créé, récursif), création d'un fichier CSS simultanément.</span>
                 <br></br>
@@ -303,7 +303,7 @@ export default function Projets() {
                 }}
                 id="Cinema" className="basis-1/3 flex-1">
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Movie Filter</span><span className='text-xl text-nowrap'> [ 2 semaines, 20/20 ]</span>
+                <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">Movie Filter</span><span className='text-xl'> [ 2 semaines, 20/20 ]</span>
                 <br></br>
                 <span className="text-teal-600 dark:text-teal-400 text-lg"> PHP, SQL, </span><span className='text-lg'>filtres de recherche croisés, <strong>pagination</strong></span>
                 <br></br>
