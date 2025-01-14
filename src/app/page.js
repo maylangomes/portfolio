@@ -13,7 +13,7 @@ import Image from "next/legacy/image";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const text =
-    "Étudiant à la Web@cadémie d'Epitech, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages et framwork : PHP - Javascript - Python - Java - Typescript - MySQL - PostgreSQL - SASS - Symfony - Laravel - React native - React.js - Next.js - jQuery - Supabase - Django - Flask - Spring - Bootstrap - Tailwind CSS.".split(
+    "Étudiant à la Web@cadémie d'Epitech et alternant chez Dentego, je peux réaliser des projets sous tous leurs aspects dans de nombreux langages et framwork : PHP - Javascript - Python - Java - Typescript - MySQL - PostgreSQL - SASS - Symfony - Laravel - React native - React.js - Next.js - jQuery - Supabase - Django - Flask - Spring - Bootstrap - Tailwind CSS.".split(
       " "
     );
 
@@ -53,7 +53,7 @@ export default function Home() {
             <h3 className="text-gray-800 text-2xl py-2 dark:text-white sm:text-3xl">
               Développeur Web Full Stack
               <br></br>
-              Recherche alternance septembre 2024
+              Actuellement en alternance chez Dentego.
             </h3>
             <p className="text-lg py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-2xl mx-auto md:text-xl">
               {text.map((el, i) => (

@@ -38,7 +38,7 @@ export default function Projets() {
             <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">
               Basket Quiz
             </span>
-            <span className="text-xl"> [ 1 semaine, projet personnel ]</span>
+            <span className="text-xl"> [ 1 semaine, test technique ]</span>
             <br></br>
             <span className="text-teal-600 dark:text-teal-400 text-lg">
               {" "}
@@ -106,8 +106,7 @@ export default function Projets() {
               <strong>streamlit</strong>, pandas,{" "}
               <strong>filtres croisés</strong>, graphiques à partir d'un csv.
               <br />
-              P.-S. - N'hésitez pas à réveiller le site lors de votre visite
-              s'il fait une sieste !
+              P.-S. - Pas le thème le plus joyeux, mais un des plus chiffrés..
             </span>
             <br></br>
             <a href="https://maylangomes.streamlit.app" target="_blank">
@@ -155,7 +154,7 @@ export default function Projets() {
             <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">
               Morpion
             </span>
-            <span className="text-xl"> [ 3h30 en examen, 19/20 ]</span>
+            <span className="text-xl"> [ 3h30, examen ]</span>
             <br></br>
             <span className="text-teal-600 dark:text-teal-400 text-lg">
               {" "}
@@ -270,7 +269,7 @@ export default function Projets() {
             <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">
               Cinema Vintage
             </span>
-            <span className="text-xl"> [ 1 jour, projet personnel ]</span>
+            <span className="text-xl"> [ 1 jour, test technique ]</span>
             <br></br>
             <span className="text-teal-600 dark:text-teal-400 text-lg">
               {" "}
@@ -332,7 +331,7 @@ export default function Projets() {
             <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">
               Puissance 4 modulable
             </span>
-            <span className="text-xl"> [ 2 semaines, 20/20 ]</span>
+            <span className="text-xl"> [ 2 semaines, projet d'école ]</span>
             <br></br>
             <span className="text-teal-600 dark:text-teal-400 text-lg">
               {" "}
@@ -396,7 +395,7 @@ export default function Projets() {
             <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">
               Sprite Generator
             </span>
-            <span className="text-xl"> [ 2 semaines, 20/20 ]</span>
+            <span className="text-xl"> [ 2 semaines, projet d'école ]</span>
             <br></br>
             <span className="text-teal-600 dark:text-teal-400 text-lg">
               {" "}
@@ -452,7 +451,7 @@ export default function Projets() {
             <span className=" text-3xl text-teal-600 dark:text-teal-400 font-bold">
               Movie Filter
             </span>
-            <span className="text-xl"> [ 2 semaines, 20/20 ]</span>
+            <span className="text-xl"> [ 2 semaines, projet d'école ]</span>
             <br></br>
             <span className="text-teal-600 dark:text-teal-400 text-lg">
               {" "}
