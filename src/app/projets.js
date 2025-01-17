@@ -2,16 +2,11 @@
 import Image from "next/legacy/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import dynamic from "next/dynamic";
 import React from "react";
-import ReactPlayer from "react-player";
-
-const VideoPlayer = dynamic(() => import("../app/video"), { ssr: false });
 
 export default function Projets() {
   return (
     <section className="py-10">
-      {/* <VideoPlayer url="/videos/sprite.mp4" /> */}
       <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap shadow-2xl p-10">
         <motion.div
           whileHover={{
