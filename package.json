@@ -21,7 +21,6 @@
     "react-player": "^2.16.0"
   },
   "devDependencies": {
-    "@types/react": "19.0.7",
     "autoprefixer": "^10.0.1",
     "npm-force-resolutions": "^0.0.10",
     "postcss": "^8",
