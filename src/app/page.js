@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import Navbar from "./navbar";
+import Navbar from "./components/Navbar";
 import Projets from "./projets";
 import Image from "next/legacy/image";
 
