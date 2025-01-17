@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import React from "react";
+import ReactPlayer from "react-player";
 
 const VideoPlayer = dynamic(() => import("../app/video"), { ssr: false });
 

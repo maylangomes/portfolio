@@ -22,6 +22,7 @@ export default function Home() {
       <title>Portfolio</title>
       <Navbar />
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+        {/* <section className="min-h-screen"> */}
         <section>
           <div className="py-10 mb-12 flex justify-between dark:text-white">
             <h1
