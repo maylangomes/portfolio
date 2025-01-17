@@ -1,4 +1,3 @@
-// components/VideoPlayer.js
 import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 
