@@ -1,25 +1,33 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import { supabase } from "../../../src/lib/supabaseClient";
 
 export default function ContactForm({ onClose }) {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm("service_t082uo9", "template_qfojwui", form.current, {
+
+    const formData = {
+      user_email: form.current.user_email.value,
+      comment: form.current.comment.value,
+    };
+
+    try {
+      await emailjs.sendForm("service_t082uo9", "template_qfojwui", form.current, {
         publicKey: "Fow1RoFj-MyGR-0J0",
-      })
-      .then(
-        () => {
-          alert("Message envoyé avec succès !");
-          onClose();
-        },
-        (error) => {
-          alert("Erreur : votre message n'a pas été envoyé. Réessayez, s'il vous plaît.");
-        }
-      );
+      });
+
+      const { error } = await supabase.from("comments").insert([formData]);
+      if (error) throw error;
+
+      alert("Commentaire envoyé et sauvegardé avec succès !");
+      onClose();
+    } catch (error) {
+      console.error("Erreur:", error.message);
+      alert("Une erreur est survenue. Veuillez réessayer.");
+    }
   };
 
   return (
@@ -34,21 +42,9 @@ export default function ContactForm({ onClose }) {
         className="bg-white rounded-lg p-6 w-11/12 sm:w-3/4 md:w-1/2 lg:w-1/3 shadow-lg"
       >
         <h1 className="text-teal-600 font-extrabold text-lg lg:text-xl xl:text-2xl pb-6 text-center">
-          Contactez-moi
+          Contactez-moi !
         </h1>
         <div className="flex flex-col gap-4">
-          <div className="flex flex-col">
-            <label htmlFor="user_name" className="text-teal-600 font-bold mb-2">
-              Nom
-            </label>
-            <input
-              id="user_name"
-              type="text"
-              name="user_name"
-              className="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
-              required
-            />
-          </div>
           <div className="flex flex-col">
             <label htmlFor="user_email" className="text-teal-600 font-bold mb-2">
               Email *
@@ -62,12 +58,12 @@ export default function ContactForm({ onClose }) {
             />
           </div>
           <div className="flex flex-col">
-            <label htmlFor="message" className="text-teal-600 font-bold mb-2">
+            <label htmlFor="comment" className="text-teal-600 font-bold mb-2">
               Message *
             </label>
             <textarea
-              id="message"
-              name="message"
+              id="comment"
+              name="comment"
               rows={4}
               className="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
               required
